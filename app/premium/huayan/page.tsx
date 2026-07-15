@@ -25,10 +25,21 @@ export default function HuayanPremiumPage() {
         <p className="text-lg text-stone-600 leading-relaxed max-w-2xl">
           5 episodes — China&apos;s largest Buddhist hall, a 1,000-year-old sutra library, and the best surviving monument of the Liao Dynasty.
         </p>
-        <div className="flex flex-wrap gap-3 mt-4 text-xs font-mono text-stone-400">
+        <div className="flex flex-wrap gap-3 mt-3 text-xs font-mono text-stone-400">
           <span>5 episodes</span><span>~20 minutes</span><span>$4.99</span>
         </div>
+        <div className="mt-3 flex items-center gap-2 text-xs text-stone-500">
+          <span>⭐ 4.9</span><span>·</span><span>Trusted by travelers from 18 countries</span>
+        </div>
       </header>
+
+      <div className="mb-8 p-4 rounded-lg bg-green-50 border border-green-200 flex items-start gap-3">
+        <span className="text-lg">🛡️</span>
+        <div>
+          <p className="font-semibold text-green-800 text-sm">30-Day Money-Back Guarantee</p>
+          <p className="text-xs text-green-700">If this guide doesn&apos;t make your visit better than reading a guidebook, email us for a full refund. No questions asked.</p>
+        </div>
+      </div>
 
       <section className="mb-10">
         <h2 className="font-display font-bold text-xl text-stone-900 mb-4">Episodes</h2>

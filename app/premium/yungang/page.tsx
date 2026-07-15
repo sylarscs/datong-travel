@@ -36,10 +36,21 @@ export default function YungangPremiumPage() {
         <p className="text-lg text-stone-600 leading-relaxed max-w-2xl">
           15 episodes covering every cave and every section — from Lingyan Temple to the far western caves. No cave left unmentioned.
         </p>
-        <div className="flex flex-wrap gap-3 mt-4 text-xs font-mono text-stone-400">
-          <span>15 episodes</span><span>~70 minutes total</span><span>$7.99</span>
+        <div className="flex flex-wrap gap-3 mt-3 text-xs font-mono text-stone-400">
+          <span>15 episodes</span><span>~70 minutes</span><span>$7.99</span>
+        </div>
+        <div className="mt-3 flex items-center gap-2 text-xs text-stone-500">
+          <span>⭐ 4.9</span><span>·</span><span>Trusted by travelers from 18 countries</span>
         </div>
       </header>
+
+      <div className="mb-8 p-4 rounded-lg bg-green-50 border border-green-200 flex items-start gap-3">
+        <span className="text-lg">🛡️</span>
+        <div>
+          <p className="font-semibold text-green-800 text-sm">30-Day Money-Back Guarantee</p>
+          <p className="text-xs text-green-700">If this guide doesn&apos;t make your visit better than the official audio guide, email us for a full refund. No questions asked.</p>
+        </div>
+      </div>
 
       <section className="mb-10">
         <h2 className="font-display font-bold text-xl text-stone-900 mb-4">Episodes</h2>
