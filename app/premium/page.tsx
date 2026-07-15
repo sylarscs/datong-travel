@@ -19,12 +19,12 @@ const GUIDES = [
   },
   {
     id: "huayan", title: "Huayan Temple", subtitle: "8 Episodes · ~30 min",
-    price: "$5.99", image: "",
+    price: "$4.99", image: "",
     desc: "China's largest Buddhist hall. A 1,000-year-old sutra library. The Khitan empire's greatest surviving monument — and its quiet gardens.",
   },
   {
     id: "yingxian", title: "Yingxian Wooden Pagoda", subtitle: "6 Episodes · ~20 min",
-    price: "$4.99", image: "",
+    price: "$3.99", image: "",
     desc: "The world's oldest wooden pagoda. 67 meters, zero nails, 40+ earthquakes survived. A day trip into Liao Dynasty engineering — and real Shanxi.",
   },
 ];
@@ -83,22 +83,25 @@ export default function PremiumPage() {
         </p>
         <p className="text-lg text-amber-300 font-semibold mb-4">+ Datong Ancient City (12 episodes · 45 min) — FREE</p>
         <p className="font-display font-bold text-3xl mb-1">$19.99</p>
-        <p className="text-xs text-stone-400 mb-4 line-through">$24.96 separately</p>
+        <p className="text-xs text-stone-400 mb-4 line-through">$22.96 separately</p>
         <button className="px-6 py-3 rounded-md bg-white text-stone-900 font-semibold hover:bg-stone-100 transition-colors">
           Get the Bundle — $19.99
         </button>
       </section>
 
-      {/* Ancient City Bonus */}
-      <Link href="/premium/ancient-city" className="block rounded-xl border-2 border-amber-300 bg-amber-50 p-6 hover:shadow-md transition-shadow">
+      {/* Ancient City — standalone or free */}
+      <div className="rounded-xl border-2 border-amber-300 bg-amber-50 p-6">
         <div className="flex items-center gap-2 mb-2">
-          <span className="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-amber-200 text-amber-800">Free with Bundle</span>
+          <span className="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-amber-200 text-amber-800">Free with Any Purchase</span>
           <span className="text-xs text-amber-700 font-mono">12 episodes · ~45 min</span>
         </div>
         <h3 className="font-display font-bold text-lg text-stone-900 mb-1">Datong Ancient City Walking Tour</h3>
-        <p className="text-sm text-stone-600 mb-2">12 attractions — Four Archways, Drum Tower, Guandi Temple, Chunyang Palace, Great Mosque, Catholic Church, Wen Miao, Shanhua Temple, Fahua Temple, Nine Dragon Screen, Dongnan Yi, City Wall. A complete full-day loop through 3.28 sq km of living history. Incredible value.</p>
-        <span className="text-sm font-semibold text-red-800">View episodes →</span>
-      </Link>
+        <p className="text-sm text-stone-600 mb-3">12 attractions — Four Archways, Drum Tower, Guandi Temple, Chunyang Palace, Great Mosque, Catholic Church, Wen Miao, Shanhua Temple, Fahua Temple, Nine Dragon Screen, Dongnan Yi, City Wall. A complete full-day loop through 3.28 sq km of living history.</p>
+        <div className="flex items-center gap-4">
+          <Link href="/premium/ancient-city" className="text-sm font-semibold text-red-800 hover:text-red-900 transition-colors">View episodes →</Link>
+          <span className="text-xs text-stone-400">Also available separately — <span className="font-semibold text-stone-700">$3.99</span></span>
+        </div>
+      </div>
     </div>
   );
 }

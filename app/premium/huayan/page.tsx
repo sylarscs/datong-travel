@@ -29,7 +29,7 @@ export default function HuayanPremiumPage() {
           5 episodes — China&apos;s largest Buddhist hall, a 1,000-year-old sutra library, and the best surviving monument of the Liao Dynasty.
         </p>
         <div className="flex flex-wrap gap-3 mt-3 text-xs font-mono text-stone-400">
-          <span>8 episodes</span><span>~30 minutes</span><span>$5.99</span>
+          <span>8 episodes</span><span>~30 minutes</span><span>$4.99</span>
         </div>
         <div className="mt-3 flex items-center gap-2 text-xs text-stone-500">
           <span>⭐ 4.9</span><span>·</span><span>Trusted by travelers from 18 countries</span>
