@@ -27,6 +27,12 @@ const GUIDES = [
     price: "$4.99", image: "",
     desc: "The world's oldest wooden pagoda. 67 meters, zero nails, 40+ earthquakes survived. A day trip into Liao Dynasty engineering — and real Shanxi.",
   },
+  {
+    id: "ancient-city", title: "Datong Ancient City", subtitle: "12 Episodes · ~45 min",
+    price: "$4.99", image: "",
+    desc: "A full-day walking tour: 12 attractions across 3.28 sq km — temples, mosques, churches, markets, and the city wall at sunset. Also free with any purchase above.",
+    bonus: true,
+  },
 ];
 
 export default function PremiumPage() {
@@ -59,15 +65,21 @@ export default function PremiumPage() {
               <div className="flex-1 p-5">
                 <div className="flex items-start justify-between gap-3 mb-2">
                   <div>
-                    <p className="text-xs text-stone-400 mb-1">{g.subtitle}</p>
+                    <div className="flex items-center gap-2 mb-1">
+                      <p className="text-xs text-stone-400">{g.subtitle}</p>
+                      {(g as any).bonus && <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-amber-200 text-amber-800">Free with Any Purchase</span>}
+                    </div>
                     <h3 className="font-display font-bold text-lg text-stone-900">{g.title}</h3>
                   </div>
                   <span className="flex-shrink-0 px-3 py-1 rounded-full bg-stone-900 text-white text-sm font-semibold">{g.price}</span>
                 </div>
                 <p className="text-sm text-stone-600 mb-3">{g.desc}</p>
-                <Link href={`/premium/${g.id}`} className="inline-block px-4 py-2 rounded-md bg-red-800 text-white text-sm font-semibold hover:bg-red-900 transition-colors">
-                  View Episodes →
-                </Link>
+                <div className="flex items-center gap-3">
+                  <Link href={`/premium/${g.id}`} className="inline-block px-4 py-2 rounded-md bg-red-800 text-white text-sm font-semibold hover:bg-red-900 transition-colors">
+                    View Episodes →
+                  </Link>
+                  {(g as any).bonus && <span className="text-xs text-stone-400">Or buy separately — $4.99</span>}
+                </div>
               </div>
             </div>
           </div>
@@ -89,19 +101,6 @@ export default function PremiumPage() {
         </button>
       </section>
 
-      {/* Ancient City — standalone or free */}
-      <div className="rounded-xl border-2 border-amber-300 bg-amber-50 p-6">
-        <div className="flex items-center gap-2 mb-2">
-          <span className="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-amber-200 text-amber-800">Free with Any Purchase</span>
-          <span className="text-xs text-amber-700 font-mono">12 episodes · ~45 min</span>
-        </div>
-        <h3 className="font-display font-bold text-lg text-stone-900 mb-1">Datong Ancient City Walking Tour</h3>
-        <p className="text-sm text-stone-600 mb-3">12 attractions — Four Archways, Drum Tower, Guandi Temple, Chunyang Palace, Great Mosque, Catholic Church, Wen Miao, Shanhua Temple, Fahua Temple, Nine Dragon Screen, Dongnan Yi, City Wall. A complete full-day loop through 3.28 sq km of living history.</p>
-        <div className="flex items-center gap-4">
-          <Link href="/premium/ancient-city" className="text-sm font-semibold text-red-800 hover:text-red-900 transition-colors">View episodes →</Link>
-          <span className="text-xs text-stone-400">Also available separately — <span className="font-semibold text-stone-700">$4.99</span></span>
-        </div>
-      </div>
     </div>
   );
 }
