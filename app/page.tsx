@@ -165,6 +165,35 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Audio Guide Promo ── */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
+        <Link
+          href="/premium"
+          className="block rounded-xl bg-stone-900 p-6 sm:p-8 hover:bg-stone-800 transition-colors group"
+        >
+          <div className="flex flex-col sm:flex-row items-center gap-6">
+            <div className="flex-shrink-0 w-16 h-16 rounded-full bg-red-800 flex items-center justify-center text-2xl">
+              🎧
+            </div>
+            <div className="flex-1 text-center sm:text-left">
+              <p className="text-xs font-semibold uppercase tracking-wider text-stone-400 mb-1">
+                New — Premium Audio Guides
+              </p>
+              <h3 className="font-display font-bold text-xl text-white mb-2">
+                Yungang Grottoes &amp; Hanging Temple
+              </h3>
+              <p className="text-sm text-stone-300 max-w-lg">
+                In-depth English narration — cave by cave, hall by hall. Like a
+                documentary, not a textbook. Free preview available.
+              </p>
+            </div>
+            <span className="flex-shrink-0 px-5 py-3 rounded-md bg-white text-stone-900 font-semibold text-sm group-hover:bg-stone-100 transition-colors">
+              Listen Free →
+            </span>
+          </div>
+        </Link>
+      </section>
+
       {/* ── Quick Links ── */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
         <h2 className="font-display font-bold text-center mb-10">
