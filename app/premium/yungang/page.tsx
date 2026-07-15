@@ -140,20 +140,26 @@ export default function YungangPremiumPage() {
               <p className="font-semibold text-stone-900 text-sm">
                 Episode 5: Cave 20 — The Open-Air Buddha
               </p>
-              <p className="text-xs text-stone-400 font-mono">4 min · Free</p>
+              <p className="text-xs text-stone-400 font-mono">4 min · Free preview</p>
             </div>
           </div>
-          <div className="text-sm text-stone-600 leading-relaxed space-y-3">
-            <p>
-              <em>This is the one. The photo you've seen a hundred times. The giant Buddha sitting in the open air, exposed to the sky, with nothing between him and you but 1,500 years of wind and rain.</em>
-            </p>
-            <p>
-              <em>First, notice what's different: there's no front wall. It collapsed centuries ago, probably during an earthquake. That accident — a structural failure — created the most photographed spot in the entire grotto complex...</em>
-            </p>
-          </div>
-          <p className="text-xs text-stone-400 mt-4">
-            🎧 Audio coming soon — text preview available now
-          </p>
+          <audio controls className="w-full mb-4" preload="metadata">
+            <source src="/audio/yungang-cave20.wav" type="audio/wav" />
+            Your browser does not support audio playback.
+          </audio>
+          <details className="text-sm text-stone-600 leading-relaxed">
+            <summary className="cursor-pointer font-semibold text-stone-700 hover:text-red-800 transition-colors">
+              Read transcript
+            </summary>
+            <div className="mt-3 space-y-3">
+              <p>
+                <em>This is the one. The photo you've seen a hundred times. The giant Buddha sitting in the open air, exposed to the sky, with nothing between him and you but 1,500 years of wind and rain.</em>
+              </p>
+              <p>
+                <em>First, notice what's different: there's no front wall. It collapsed centuries ago, probably during an earthquake. That accident — a structural failure — created the most photographed spot in the entire grotto complex...</em>
+              </p>
+            </div>
+          </details>
         </div>
       </section>
 
