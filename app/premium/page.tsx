@@ -19,7 +19,7 @@ const GUIDES = [
   },
   {
     id: "huayan", title: "Huayan Temple", subtitle: "8 Episodes · ~30 min",
-    price: "$4.99", image: "",
+    price: "$5.99", image: "",
     desc: "China's largest Buddhist hall. A 1,000-year-old sutra library. The Khitan empire's greatest surviving monument — and its quiet gardens.",
   },
   {
@@ -95,7 +95,7 @@ export default function PremiumPage() {
         </p>
         <p className="text-lg text-amber-300 font-semibold mb-4">+ Datong Ancient City (12 episodes · 45 min) — FREE</p>
         <p className="font-display font-bold text-3xl mb-1">$19.99</p>
-        <p className="text-xs text-stone-400 mb-4 line-through">$23.96 separately</p>
+        <p className="text-xs text-stone-400 mb-4 line-through">$28.95 separately</p>
         <button className="px-6 py-3 rounded-md bg-white text-stone-900 font-semibold hover:bg-stone-100 transition-colors">
           Get the Bundle — $19.99
         </button>
