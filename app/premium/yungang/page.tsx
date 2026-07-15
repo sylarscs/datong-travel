@@ -10,15 +10,15 @@ export const metadata = {
 const EPISODES = [
   { num: 1, title: "Lingyan Temple — The Gateway", location: "Entrance plaza", duration: "3 min", highlight: false },
   { num: 2, title: "The Eastern Caves (1–4)", location: "Eastern cliff", duration: "5 min", highlight: false },
-  { num: 3, title: "Caves 5 & 6 — The Twin Caves ★★★", location: "Central-east", duration: "6 min", highlight: true },
+  { num: 3, title: "Caves 5 & 6 — The Twin Caves", location: "Central-east", duration: "6 min", highlight: true, badge: "Must See" },
   { num: 4, title: "Caves 7 & 8 — The Hindu Connection", location: "Central-east", duration: "4 min", highlight: false },
   { num: 5, title: "Caves 9 & 10 — The Five Flowers Caves", location: "Central-east", duration: "4 min", highlight: false },
   { num: 6, title: "Cave 11 — The Square Pillar", location: "Central-east", duration: "3 min", highlight: false },
-  { num: 7, title: "Cave 12 — The Music Cave ★★", location: "Central-east", duration: "4 min", highlight: true },
+  { num: 7, title: "Cave 12 — The Music Cave", location: "Central-east", duration: "4 min", highlight: true, badge: "Must See" },
   { num: 8, title: "Cave 13 — The Cross-Ankled Bodhisattva", location: "Central-east", duration: "3 min", highlight: false },
   { num: 9, title: "Cave 14 & 15 — Ten Thousand Buddhas", location: "Central", duration: "4 min", highlight: false },
-  { num: 10, title: "Caves 16–19 — The Emperors' Caves ★★★", location: "Central", duration: "6 min", highlight: true },
-  { num: 11, title: "Cave 20 — The Open-Air Buddha ★★★", location: "Central-west", duration: "4 min", highlight: true },
+  { num: 10, title: "Caves 16–19 — The Emperors' Caves", location: "Central", duration: "6 min", highlight: true, badge: "Must See" },
+  { num: 11, title: "Cave 20 — The Open-Air Buddha", location: "Central-west", duration: "4 min", highlight: true, badge: "Must See" },
   { num: 12, title: "Western Caves (21–29)", location: "Western section", duration: "5 min", highlight: false },
   { num: 13, title: "Western Caves (30–37)", location: "Western section", duration: "4 min", highlight: false },
   { num: 14, title: "Western Caves (38–45) — The End", location: "Far western", duration: "4 min", highlight: false },
@@ -61,7 +61,10 @@ export default function YungangPremiumPage() {
                 {ep.num}
               </span>
               <div className="flex-1 min-w-0">
-                <h3 className="font-semibold text-stone-900 text-sm">{ep.title}</h3>
+                <div className="flex items-center gap-2">
+                  <h3 className="font-semibold text-stone-900 text-sm">{ep.title}</h3>
+                  {ep.badge && <span className="flex-shrink-0 px-1.5 py-0.5 rounded text-[10px] font-bold bg-red-100 text-red-800">{ep.badge}</span>}
+                </div>
                 <p className="text-xs text-stone-400 font-mono">{ep.location} · {ep.duration}</p>
               </div>
               <span className={`flex-shrink-0 px-2 py-0.5 rounded text-[10px] font-semibold ${ep.num <= 3 ? "bg-stone-100 text-stone-500" : "bg-stone-900 text-white"}`}>

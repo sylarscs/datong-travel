@@ -27,11 +27,6 @@ const GUIDES = [
     price: "$4.99", image: "",
     desc: "The world's oldest wooden pagoda. 67 meters, zero nails, 40+ earthquakes survived. A day trip into Liao Dynasty engineering — and real Shanxi.",
   },
-  {
-    id: "ancient-city", title: "Datong Ancient City", subtitle: "12 Episodes · ~45 min",
-    price: "$5.99", image: "",
-    desc: "A half-day walking tour: Drum Tower, Guandi Temple, Chunyang Palace, Great Mosque, Catholic Church, Wen Miao, Shanhua Temple, Fahua Temple, Nine Dragon Screen, Dongnan Yi, and the City Wall at sunset.",
-  },
 ];
 
 export default function PremiumPage() {
@@ -80,19 +75,30 @@ export default function PremiumPage() {
       </div>
 
       {/* Bundle */}
-      <section className="p-6 sm:p-8 rounded-xl bg-stone-900 text-white text-center">
+      <section className="p-6 sm:p-8 rounded-xl bg-stone-900 text-white text-center mb-8">
         <p className="text-xs font-semibold uppercase tracking-wider text-stone-400 mb-2">Best Value — Save 30%</p>
         <h2 className="font-display font-bold text-2xl mb-2">Datong Complete Bundle</h2>
-        <p className="text-stone-300 mb-4 max-w-md mx-auto text-sm">
-          All 5 guides — Yungang Grottoes + Hanging Temple + Huayan Temple + Yingxian Wooden Pagoda + Datong Ancient City. 53 episodes, ~3.5 hours of audio.
+        <p className="text-stone-300 mb-1 max-w-md mx-auto text-sm">
+          All 4 premium guides — Yungang Grottoes + Hanging Temple + Huayan Temple + Yingxian Wooden Pagoda.
         </p>
+        <p className="text-lg text-amber-300 font-semibold mb-4">+ Datong Ancient City (12 episodes · 45 min) — FREE</p>
         <p className="font-display font-bold text-3xl mb-1">$19.99</p>
-        <p className="text-xs text-stone-400 mb-4 line-through">$30.95 individually</p>
+        <p className="text-xs text-stone-400 mb-4 line-through">$24.96 separately</p>
         <button className="px-6 py-3 rounded-md bg-white text-stone-900 font-semibold hover:bg-stone-100 transition-colors">
           Get the Bundle — $19.99
         </button>
-        <p className="text-xs text-stone-400 mt-4">Payment processing coming soon.</p>
       </section>
+
+      {/* Ancient City Bonus */}
+      <Link href="/premium/ancient-city" className="block rounded-xl border-2 border-amber-300 bg-amber-50 p-6 hover:shadow-md transition-shadow">
+        <div className="flex items-center gap-2 mb-2">
+          <span className="px-2 py-0.5 rounded text-[10px] font-bold uppercase bg-amber-200 text-amber-800">Free with Bundle</span>
+          <span className="text-xs text-amber-700 font-mono">12 episodes · ~45 min</span>
+        </div>
+        <h3 className="font-display font-bold text-lg text-stone-900 mb-1">Datong Ancient City Walking Tour</h3>
+        <p className="text-sm text-stone-600 mb-2">12 attractions — Four Archways, Drum Tower, Guandi Temple, Chunyang Palace, Great Mosque, Catholic Church, Wen Miao, Shanhua Temple, Fahua Temple, Nine Dragon Screen, Dongnan Yi, City Wall. A complete half-day loop through 3.28 sq km of living history. Incredible value.</p>
+        <span className="text-sm font-semibold text-red-800">View episodes →</span>
+      </Link>
     </div>
   );
 }

@@ -11,7 +11,7 @@ const EPISODES = [
   { num: 2, title: "Why Here? — Floods, Silence & Sacred Ground", duration: "3 min", desc: "Floods, acoustics, Daoist geography. Plus the political reason for building on a cliff in 491 AD." },
   { num: 3, title: "The First Glimpse — Approaching the Temple", duration: "2 min", desc: "How the temple reveals itself gradually. The psychology of the approach — invisible until you're underneath it." },
   { num: 4, title: "At the Base — Looking Up", duration: "2 min", desc: "Standing directly beneath. The decorative posts that sway in the wind. The real support hidden inside the mountain." },
-  { num: 5, title: "The Engineering — How It Hangs ★★★", duration: "4 min", desc: "Cantilever beams, tung-oil-soaked wood, the seismic secret. Why this temple has survived 1,500 years of earthquakes." },
+  { num: 5, title: "The Engineering — How It Hangs", duration: "4 min", desc: "Cantilever beams, tung-oil-soaked wood, the seismic secret. Why this temple has survived 1,500 years of earthquakes.", badge: "Must See" },
   { num: 6, title: "The Climb Begins — Southern Section", duration: "3 min", desc: "Narrow walkways, low railings. The meditation chamber, the sutra library, and monastic daily life at 75 meters." },
   { num: 7, title: "The Central Halls — Buddhist Shrines", duration: "4 min", desc: "Main Buddhist shrines. Mudras, asanas, and the silent language of Buddhist iconography." },
   { num: 8, title: "The Three Religions Hall — Buddha", duration: "3 min", desc: "The only hall in China with Buddha, Laozi, and Confucius. Part 1: Sakyamuni and Buddhism's journey from India." },
@@ -54,7 +54,10 @@ export default function XuankongPremiumPage() {
             <div key={ep.num} className="flex items-start gap-3 p-3 rounded-lg border border-stone-200 bg-white">
               <span className="flex-shrink-0 w-7 h-7 rounded-full bg-stone-900 text-white flex items-center justify-center text-xs font-semibold">{ep.num}</span>
               <div className="flex-1 min-w-0">
-                <h3 className="font-semibold text-stone-900 text-sm">{ep.title}</h3>
+                <div className="flex items-center gap-2">
+                  <h3 className="font-semibold text-stone-900 text-sm">{ep.title}</h3>
+                  {(ep as any).badge && <span className="flex-shrink-0 px-1.5 py-0.5 rounded text-[10px] font-bold bg-red-100 text-red-800">{(ep as any).badge}</span>}
+                </div>
                 <p className="text-xs text-stone-500 mt-0.5">{ep.desc}</p>
                 <p className="text-xs text-stone-400 mt-0.5 font-mono">{ep.duration}</p>
               </div>
