@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getFeaturedContent } from "@/lib/content";
 import { CTABanner } from "@/components/ui/CTABanner";
 import { getAffiliateUrl } from "@/lib/affiliate";
+import { IMAGES } from "@/lib/images";
 
 export default function HomePage() {
   const featuredGuides = getFeaturedContent("guides", 3);
@@ -10,31 +11,29 @@ export default function HomePage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative bg-stone-100 overflow-hidden">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24 lg:py-32">
+      <section className="relative overflow-hidden bg-stone-800">
+        {/* Background image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-60"
+          style={{ backgroundImage: `url(${IMAGES.hero})` }}
+        />
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28 lg:py-36">
           <div className="max-w-3xl">
-            {/* Eyebrow */}
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-400 mb-4">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-300 mb-4">
               Your Complete English Guide to
             </p>
-
-            {/* Headline */}
-            <h1 className="font-display font-extrabold text-stone-900 leading-[1.1] mb-6">
+            <h1 className="font-display font-extrabold text-white leading-[1.1] mb-6">
               Datong.
               <br />
-              <span className="text-red-800">Ancient caves,</span>
+              <span className="text-red-400">Ancient caves,</span>
               <br />
               living history.
             </h1>
-
-            {/* Subtitle */}
-            <p className="text-lg text-stone-700 leading-relaxed mb-8 max-w-xl">
+            <p className="text-lg text-stone-200 leading-relaxed mb-8 max-w-xl">
               Discover UNESCO World Heritage grottoes carved into sandstone cliffs,
               a temple suspended 75 meters in the air, and a walled city where
               Ming Dynasty history meets Shanxi&apos;s legendary noodle culture.
             </p>
-
-            {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 href="/guides"
@@ -44,20 +43,12 @@ export default function HomePage() {
               </Link>
               <Link
                 href="/itineraries"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-md border border-stone-300 text-stone-900 font-semibold hover:bg-white transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-md border border-stone-500 text-white font-semibold hover:bg-white/10 transition-colors"
               >
                 View Itineraries
               </Link>
             </div>
           </div>
-        </div>
-
-        {/* Decorative element — subtle grotto arch shape */}
-        <div className="absolute top-0 right-0 w-1/3 h-full opacity-[0.03] pointer-events-none">
-          <svg viewBox="0 0 400 800" fill="currentColor" className="w-full h-full text-stone-900">
-            <path d="M200 50 C100 50, 50 300, 50 400 C50 500, 100 750, 200 750 C300 750, 350 500, 350 400 C350 300, 300 50, 200 50Z" />
-            <path d="M200 120 C140 120, 110 320, 110 400 C110 480, 140 680, 200 680 C260 680, 290 480, 290 400 C290 320, 260 120, 200 120Z" />
-          </svg>
         </div>
       </section>
 
@@ -185,18 +176,30 @@ export default function HomePage() {
             { name: "Hanging Temple", icon: "🏯", href: "/guides/hanging-temple" },
             { name: "Huayan Temple", icon: "🛕", href: "/attractions/huayan-temple" },
             { name: "City Wall", icon: "🧱", href: "/attractions/datong-city-wall" },
-            { name: "Food Guide", icon: "🍜", href: "/guides/datong-food-guide" },
+            { name: "Nine Dragon Screen", icon: "🐉", href: "/attractions/nine-dragon-screen" },
           ].map((item) => (
-            <Link
+            <div
               key={item.name}
-              href={item.href}
-              className="flex flex-col items-center gap-2 p-4 rounded-xl border border-stone-200 bg-white hover:border-red-800/20 hover:shadow-sm transition-all group"
+              className="flex flex-col rounded-xl border border-stone-200 bg-white hover:shadow-sm transition-all group overflow-hidden"
             >
-              <span className="text-2xl">{item.icon}</span>
-              <span className="text-xs font-semibold text-stone-900 group-hover:text-red-800 transition-colors text-center">
-                {item.name}
-              </span>
-            </Link>
+              <Link
+                href={item.href}
+                className="flex flex-col items-center gap-2 p-4 pb-2"
+              >
+                <span className="text-2xl">{item.icon}</span>
+                <span className="text-xs font-semibold text-stone-900 group-hover:text-red-800 transition-colors text-center">
+                  {item.name}
+                </span>
+              </Link>
+              <a
+                href={getAffiliateUrl()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-center py-2 text-[10px] font-semibold text-red-800 hover:bg-red-50 transition-colors border-t border-stone-100"
+              >
+                Book Tickets →
+              </a>
+            </div>
           ))}
         </div>
       </section>
