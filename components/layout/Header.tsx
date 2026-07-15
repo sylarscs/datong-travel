@@ -6,7 +6,7 @@ import { MobileMenu } from "./MobileMenu";
 
 const NAV_LINKS = [
   { href: "/guides", label: "Guides" },
-  { href: "/attractions", label: "Attractions" },
+  { href: "/premium", label: "Audio Guides" },
   { href: "/itineraries", label: "Itineraries" },
   { href: "/transportation", label: "Transport" },
 ];

@@ -1,0 +1,171 @@
+import Link from "next/link";
+import { Breadcrumb } from "@/components/content/Breadcrumb";
+
+export const metadata = {
+  title: "Premium Audio Guides — Yungang Grottoes & Hanging Temple",
+  description:
+    "In-depth English audio guides for Datong's UNESCO sites. Cave-by-cave narration, historical context, and local insights.",
+};
+
+const GUIDES = [
+  {
+    id: "yungang",
+    title: "Yungang Grottoes",
+    subtitle: "The Complete Audio Guide",
+    episodes: 6,
+    duration: "~30 min total",
+    price: "$7.99",
+    description:
+      "Cave-by-cave narration through 1,500 years of Buddhist art. From the 17-meter colossus in Cave 5 to the iconic open-air Buddha of Cave 20, every major cave explained in clear, vivid English.",
+    image: "/images/yungang.jpg",
+    sampleTrack: "Cave 20: The Open-Air Buddha (free preview)",
+  },
+  {
+    id: "xuankong",
+    title: "Hanging Temple",
+    subtitle: "The Complete Audio Guide",
+    episodes: 4,
+    duration: "~20 min total",
+    price: "$5.99",
+    description:
+      "Why is a temple bolted to a cliff? How has it survived 1,500 years of earthquakes? What's inside the highest halls? The story of Xuankong Si, told from the ground up.",
+    image: "/images/xuankong.jpg",
+    sampleTrack: "",
+  },
+];
+
+export default function PremiumPage() {
+  return (
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+      <Breadcrumb
+        items={[
+          { label: "Home", href: "/" },
+          { label: "Premium Audio Guides" },
+        ]}
+      />
+
+      <header className="mb-10">
+        <h1 className="font-display font-extrabold text-stone-900 mb-3">
+          Audio Guides
+        </h1>
+        <p className="text-lg text-stone-600 leading-relaxed max-w-2xl">
+          The English audio guides that Datong&apos;s attractions don&apos;t
+          provide. In-depth, narrative-driven, and written for curious
+          travelers — not tour groups.
+        </p>
+      </header>
+
+      <section className="mb-12 p-6 rounded-xl bg-stone-100 border border-stone-200">
+        <h2 className="font-display font-bold text-lg text-stone-900 mb-3">
+          Why These Exist
+        </h2>
+        <div className="text-sm text-stone-600 leading-relaxed space-y-2">
+          <p>
+            The official English audio guides at Yungang and the Hanging Temple
+            are fine. But they&apos;re short, generic, and read like Wikipedia
+            entries. You&apos;ll hear facts but no stories. Dates but no drama.
+          </p>
+          <p>
+            These guides are different. They&apos;re written like a documentary
+            — immersive second-person narration that puts you in front of the
+            art and explains not just what you&apos;re seeing, but why it
+            matters. Historical context. Cultural connections. The human stories
+            behind the stone.
+          </p>
+        </div>
+      </section>
+
+      <div className="space-y-8 mb-12">
+        {GUIDES.map((guide) => (
+          <div
+            key={guide.id}
+            className="rounded-xl border border-stone-200 bg-white overflow-hidden hover:shadow-md transition-shadow"
+          >
+            <div className="flex flex-col sm:flex-row">
+              <div className="sm:w-56 flex-shrink-0">
+                {guide.image ? (
+                  <div
+                    className="h-48 sm:h-full bg-cover bg-center"
+                    style={{ backgroundImage: `url(${guide.image})` }}
+                  />
+                ) : (
+                  <div className="h-48 sm:h-full bg-gradient-to-br from-stone-200 to-stone-300 flex items-center justify-center">
+                    <span className="text-4xl">🎧</span>
+                  </div>
+                )}
+              </div>
+              <div className="flex-1 p-6">
+                <div className="flex items-start justify-between gap-4 mb-3">
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-wider text-stone-400 mb-1">
+                      {guide.subtitle}
+                    </p>
+                    <h3 className="font-display font-bold text-xl text-stone-900">
+                      {guide.title}
+                    </h3>
+                  </div>
+                  <span className="flex-shrink-0 px-3 py-1 rounded-full bg-stone-900 text-white text-sm font-semibold">
+                    {guide.price}
+                  </span>
+                </div>
+                <p className="text-sm text-stone-600 leading-relaxed mb-4">
+                  {guide.description}
+                </p>
+                <div className="flex flex-wrap gap-4 text-xs text-stone-400 mb-4">
+                  <span className="font-mono">
+                    {guide.episodes} episodes
+                  </span>
+                  <span className="font-mono">{guide.duration}</span>
+                  {guide.sampleTrack && (
+                    <span className="text-red-800 font-semibold">
+                      🎧 {guide.sampleTrack}
+                    </span>
+                  )}
+                </div>
+                <div className="flex gap-3">
+                  <Link
+                    href={`/premium/${guide.id}`}
+                    className="px-4 py-2 rounded-md bg-red-800 text-white text-sm font-semibold hover:bg-red-900 transition-colors"
+                  >
+                    View Details →
+                  </Link>
+                  {guide.sampleTrack && (
+                    <Link
+                      href={`/premium/${guide.id}#sample`}
+                      className="px-4 py-2 rounded-md border border-stone-200 text-stone-700 text-sm font-semibold hover:bg-stone-50 transition-colors"
+                    >
+                      Free Preview
+                    </Link>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <section className="mb-12 p-6 sm:p-8 rounded-xl bg-stone-900 text-white text-center">
+        <p className="text-xs font-semibold uppercase tracking-wider text-stone-400 mb-2">
+          Best Value
+        </p>
+        <h2 className="font-display font-bold text-2xl mb-2">
+          Datong Complete Audio Bundle
+        </h2>
+        <p className="text-stone-300 mb-4 max-w-md mx-auto text-sm">
+          Both guides — Yungang Grottoes + Hanging Temple. 10 episodes, ~50
+          minutes of audio. Everything you need for Datong&apos;s two UNESCO
+          sites.
+        </p>
+        <p className="font-display font-bold text-3xl mb-4">
+          $11.99
+          <span className="text-sm text-stone-400 line-through ml-2">
+            $13.98
+          </span>
+        </p>
+        <button className="px-6 py-3 rounded-md bg-white text-stone-900 font-semibold hover:bg-stone-100 transition-colors">
+          Get Both Guides →
+        </button>
+      </section>
+    </div>
+  );
+}
