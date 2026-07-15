@@ -11,9 +11,20 @@ export default function HomePage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-stone-800 via-stone-800 to-stone-700">
-        {/* Subtle texture overlay */}
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-100 via-transparent to-transparent" />
+      <section className="relative overflow-hidden bg-stone-900">
+        {/* Two-image collage */}
+        <div className="absolute inset-0 flex">
+          <div
+            className="w-1/2 bg-cover bg-center"
+            style={{ backgroundImage: `url(${IMAGES.hero})` }}
+          />
+          <div
+            className="w-1/2 bg-cover bg-center"
+            style={{ backgroundImage: `url(${IMAGES.heroSecondary})` }}
+          />
+        </div>
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-stone-900/75" />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 sm:py-28 lg:py-36">
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-300 mb-4">
