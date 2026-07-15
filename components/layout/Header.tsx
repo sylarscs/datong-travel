@@ -63,7 +63,7 @@ export function Header() {
         {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-3">
           <Link
-            href="/#checklist"
+            href="/free-guide"
             className="px-4 py-2 rounded-md bg-red-800 text-white text-sm font-semibold hover:bg-red-900 transition-colors"
           >
             Free Guide

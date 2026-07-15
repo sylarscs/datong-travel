@@ -84,7 +84,7 @@ export function MobileMenu({ open, onClose, links }: MobileMenuProps) {
 
         <div className="mt-6 pt-6 border-t border-stone-200">
           <Link
-            href="/#checklist"
+            href="/free-guide"
             onClick={onClose}
             className="block w-full text-center px-4 py-3 rounded-md bg-red-800 text-white font-semibold hover:bg-red-900 transition-colors"
           >
