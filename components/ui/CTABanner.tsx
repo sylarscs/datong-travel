@@ -19,9 +19,9 @@ export function CTABanner({
   const [message, setMessage] = useState("");
 
   const variantStyles = {
-    jade: "bg-jade-50 border-jade/30",
-    sand: "bg-sand-100 border-sand-200",
-    cinnabar: "bg-red-50 border-cinnabar/20",
+    jade: "bg-jade-50 border border-jade",
+    sand: "bg-sand-100 border border-sand-200",
+    cinnabar: "bg-red-50 border border-cinnabar",
   };
 
   async function handleSubmit(e: React.FormEvent) {
