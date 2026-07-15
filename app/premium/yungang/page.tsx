@@ -114,11 +114,11 @@ export default function YungangPremiumPage() {
               </div>
               {ep.num <= 3 ? (
                 <span className="flex-shrink-0 px-2 py-0.5 rounded text-[10px] font-semibold bg-stone-100 text-stone-500">
-                  PREVIEW
+                  FREE PREVIEW
                 </span>
               ) : (
                 <span className="flex-shrink-0 px-2 py-0.5 rounded text-[10px] font-semibold bg-stone-900 text-white">
-                  PREMIUM
+                  AVAILABLE
                 </span>
               )}
             </div>
