@@ -12,10 +12,10 @@ const STYLES: Record<InfoBoxType, { bg: string; border: string; icon: string; la
   },
   warning: {
     bg: "bg-red-50",
-    border: "border-l-[3px] border-red-700",
+    border: "border-l-[3px] border-red-800",
     icon: "⚠️",
     label: "Important",
-    labelColor: "text-red-700",
+    labelColor: "text-red-800",
   },
   info: {
     bg: "bg-stone-100",

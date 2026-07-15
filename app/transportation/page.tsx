@@ -123,7 +123,7 @@ export default function TransportationPage() {
           href={getAffiliateUrl()}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex px-5 py-2.5 rounded-md bg-red-700 text-white text-sm font-semibold hover:bg-red-700 transition-colors"
+          className="inline-flex px-5 py-2.5 rounded-md bg-red-800 text-white text-sm font-semibold hover:bg-red-900 transition-colors"
         >
           Search Train Tickets →
         </a>

@@ -104,7 +104,7 @@ export default function AboutPage() {
         </p>
         <p className="text-sm text-stone-700">
           📧 Email us at{" "}
-          <a href="mailto:hello@datongguide.com" className="text-red-700 font-medium">
+          <a href="mailto:hello@datongguide.com" className="text-red-800 font-medium">
             hello@datongguide.com
           </a>
         </p>

@@ -75,7 +75,7 @@ export function MobileMenu({ open, onClose, links }: MobileMenuProps) {
               key={link.href}
               href={link.href}
               onClick={onClose}
-              className="px-3 py-3 rounded-md font-medium text-stone-700 hover:text-red-700 hover:bg-stone-100 transition-colors"
+              className="px-3 py-3 rounded-md font-medium text-stone-700 hover:text-red-800 hover:bg-stone-100 transition-colors"
             >
               {link.label}
             </Link>
@@ -86,7 +86,7 @@ export function MobileMenu({ open, onClose, links }: MobileMenuProps) {
           <Link
             href="/#checklist"
             onClick={onClose}
-            className="block w-full text-center px-4 py-3 rounded-md bg-red-700 text-white font-semibold hover:bg-red-700 transition-colors"
+            className="block w-full text-center px-4 py-3 rounded-md bg-red-800 text-white font-semibold hover:bg-red-900 transition-colors"
           >
             Get Free Guide →
           </Link>

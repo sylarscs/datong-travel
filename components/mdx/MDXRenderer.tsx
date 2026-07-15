@@ -29,7 +29,7 @@ export const mdxComponents: MDXComponents = {
         href={href}
         target={isExternal ? "_blank" : undefined}
         rel={isExternal ? "noopener noreferrer" : undefined}
-        className="text-red-700 hover:text-red-700 underline underline-offset-2 decoration-stone-300 hover:decoration-red-600 transition-colors"
+        className="text-red-800 hover:text-red-800 underline underline-offset-2 decoration-stone-300 hover:decoration-red-600 transition-colors"
         {...props}
       >
         {children}

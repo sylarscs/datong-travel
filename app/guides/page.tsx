@@ -62,7 +62,7 @@ export default function GuidesPage() {
                     ))}
                   </div>
                 )}
-                <h2 className="font-display font-bold text-lg text-stone-900 group-hover:text-red-700 transition-colors leading-tight">
+                <h2 className="font-display font-bold text-lg text-stone-900 group-hover:text-red-800 transition-colors leading-tight">
                   {guide.frontmatter.title}
                 </h2>
                 <p className="mt-2 text-sm text-stone-400 line-clamp-2">
@@ -81,7 +81,7 @@ export default function GuidesPage() {
           <p className="text-stone-400 text-sm">
             We&apos;re crafting the most detailed Datong guides on the internet.
             Check back soon, or{" "}
-            <Link href="/#checklist" className="text-red-700 font-medium">
+            <Link href="/#checklist" className="text-red-800 font-medium">
               sign up for our newsletter
             </Link>{" "}
             to get notified when new guides are published.

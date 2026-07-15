@@ -38,7 +38,7 @@ export default function ItinerariesPage() {
               href={`/itineraries/${itin.slug}`}
               className="block rounded-xl border border-stone-200 bg-white p-6 hover:shadow-lg transition-all group"
             >
-              <h2 className="font-display font-bold text-xl text-stone-900 group-hover:text-red-700 transition-colors">
+              <h2 className="font-display font-bold text-xl text-stone-900 group-hover:text-red-800 transition-colors">
                 {itin.frontmatter.title}
               </h2>
               <p className="mt-2 text-stone-700 leading-relaxed">
