@@ -16,20 +16,20 @@ export default function HomePage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${IMAGES.heroSecondary})` }}
         />
-        <div className="absolute inset-0 bg-stone-900/65" />
+        <div className="absolute inset-0 bg-stone-900/75" />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-24 sm:py-32 lg:py-40">
           <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-stone-300 mb-4">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/70 mb-4">
               Your Complete English Guide to
             </p>
             <h1 className="font-display font-extrabold text-white leading-[1.1] mb-6 text-4xl sm:text-5xl lg:text-6xl">
               Datong.
               <br />
-              <span className="text-red-400">Ancient caves,</span>
+              <span className="text-red-300">Ancient caves,</span>
               <br />
               living history.
             </h1>
-            <p className="text-lg text-stone-200 leading-relaxed mb-8 max-w-lg">
+            <p className="text-lg text-white/80 leading-relaxed mb-8 max-w-lg">
               Discover UNESCO World Heritage grottoes carved into sandstone cliffs,
               a temple suspended 75 meters in the air, and a walled city where
               Ming Dynasty history meets Shanxi&apos;s legendary noodle culture.
