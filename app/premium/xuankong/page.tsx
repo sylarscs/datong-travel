@@ -14,9 +14,9 @@ const EPISODES = [
   { num: 5, title: "The Engineering — How It Hangs", duration: "4 min", desc: "Cantilever beams, tung-oil-soaked wood, the seismic secret. Why this temple has survived 1,500 years of earthquakes.", badge: "Must See" },
   { num: 6, title: "The Climb Begins — Southern Section", duration: "3 min", desc: "Narrow walkways, low railings. The meditation chamber, the sutra library, and monastic daily life at 75 meters." },
   { num: 7, title: "The Central Halls — Buddhist Shrines", duration: "4 min", desc: "Main Buddhist shrines. Mudras, asanas, and the silent language of Buddhist iconography." },
-  { num: 8, title: "The Three Religions Hall — Buddha", duration: "3 min", desc: "The only hall in China with Buddha, Laozi, and Confucius. Part 1: Sakyamuni and Buddhism's journey from India." },
-  { num: 9, title: "The Three Religions Hall — Daoism & Confucianism", duration: "3 min", desc: "Part 2: Why housing all three faiths was a radical political act. The Northern Wei as outsiders ruling a Chinese population." },
-  { num: 10, title: "The Highest Point — 90 Meters Up", duration: "3 min", desc: "The view from the top. Mount Heng on the horizon. The river below. What the monks saw every morning for 1,500 years." },
+  { num: 8, title: "The Three Religions Hall — Buddha", duration: "3 min", badge: "Must See", desc: "The only hall in China with Buddha, Laozi, and Confucius. Part 1: Sakyamuni and Buddhism's journey from India." },
+  { num: 9, title: "The Three Religions Hall — Daoism & Confucianism", duration: "3 min", badge: "Must See", desc: "Part 2: Why housing all three faiths was a radical political act. The Northern Wei as outsiders ruling a Chinese population." },
+  { num: 10, title: "The Highest Point — 90 Meters Up", duration: "3 min", badge: "Must See", desc: "The view from the top. Mount Heng on the horizon. The river below. What the monks saw every morning for 1,500 years." },
   { num: 11, title: "Details & Decoration — What Most People Miss", duration: "3 min", desc: "Different bracket sets by different craftsmen. Worn stone steps. Offerings in corners. Forty halls of hidden details." },
   { num: 12, title: "The Descent & What It Means", duration: "2 min", desc: "You were up there. It held. Faith and engineering as the same thing — trusting what you can't see will support you." },
 ];

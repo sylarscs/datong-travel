@@ -96,7 +96,7 @@ export default function PremiumPage() {
           <span className="text-xs text-amber-700 font-mono">12 episodes · ~45 min</span>
         </div>
         <h3 className="font-display font-bold text-lg text-stone-900 mb-1">Datong Ancient City Walking Tour</h3>
-        <p className="text-sm text-stone-600 mb-2">12 attractions — Four Archways, Drum Tower, Guandi Temple, Chunyang Palace, Great Mosque, Catholic Church, Wen Miao, Shanhua Temple, Fahua Temple, Nine Dragon Screen, Dongnan Yi, City Wall. A complete half-day loop through 3.28 sq km of living history. Incredible value.</p>
+        <p className="text-sm text-stone-600 mb-2">12 attractions — Four Archways, Drum Tower, Guandi Temple, Chunyang Palace, Great Mosque, Catholic Church, Wen Miao, Shanhua Temple, Fahua Temple, Nine Dragon Screen, Dongnan Yi, City Wall. A complete full-day loop through 3.28 sq km of living history. Incredible value.</p>
         <span className="text-sm font-semibold text-red-800">View episodes →</span>
       </Link>
     </div>

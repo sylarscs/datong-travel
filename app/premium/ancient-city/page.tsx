@@ -29,7 +29,7 @@ export default function AncientCityPage() {
       <header className="mb-10">
         <p className="text-xs font-semibold uppercase tracking-wider text-stone-400 mb-2">Premium Audio Guide</p>
         <h1 className="font-display font-extrabold text-stone-900 text-3xl sm:text-4xl mb-3">Datong Ancient City</h1>
-        <p className="text-lg text-stone-600 leading-relaxed max-w-2xl">12-episode walking tour. A half-day loop through 3.28 square kilometers — temples, mosques, churches, markets, and the city wall at sunset.</p>
+        <p className="text-lg text-stone-600 leading-relaxed max-w-2xl">12-episode walking tour. A full-day loop through 3.28 square kilometers — temples, mosques, churches, markets, and the city wall at sunset.</p>
         <div className="flex flex-wrap gap-3 mt-3 text-xs font-mono text-stone-400">
           <span>12 episodes</span><span>~45 minutes</span><span>$5.99</span>
         </div>
