@@ -11,47 +11,42 @@ export default function HomePage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative overflow-hidden bg-stone-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-20">
-          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
-            {/* Left: Text */}
-            <div className="flex-1 text-center lg:text-left">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-400 mb-4">
-                Your Complete English Guide to
-              </p>
-              <h1 className="font-display font-extrabold text-stone-900 leading-[1.1] mb-6">
-                Datong.
-                <br />
-                <span className="text-red-800">Ancient caves,</span>
-                <br />
-                living history.
-              </h1>
-              <p className="text-base text-stone-600 leading-relaxed mb-8 max-w-md mx-auto lg:mx-0">
-                Discover UNESCO World Heritage grottoes carved into sandstone cliffs,
-                a temple suspended 75 meters in the air, and a walled city where
-                Ming Dynasty history meets Shanxi&apos;s legendary noodle culture.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-                <Link
-                  href="/guides"
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-md bg-red-800 text-white font-semibold hover:bg-red-900 transition-colors"
-                >
-                  Explore Guides →
-                </Link>
-                <Link
-                  href="/itineraries"
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-md border border-stone-300 text-stone-800 font-semibold hover:bg-stone-100 transition-colors"
-                >
-                  View Itineraries
-                </Link>
-              </div>
-            </div>
-            {/* Right: Image */}
-            <div className="flex-1 w-full max-w-lg lg:max-w-none">
-              <div
-                className="w-full aspect-[4/3] rounded-2xl bg-cover bg-center shadow-lg"
-                style={{ backgroundImage: `url(${IMAGES.hero})` }}
-              />
+      <section className="relative overflow-hidden bg-stone-900">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${IMAGES.heroSecondary})` }}
+        />
+        <div className="absolute inset-0 bg-stone-900/65" />
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-24 sm:py-32 lg:py-40">
+          <div className="max-w-2xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-stone-300 mb-4">
+              Your Complete English Guide to
+            </p>
+            <h1 className="font-display font-extrabold text-white leading-[1.1] mb-6 text-4xl sm:text-5xl lg:text-6xl">
+              Datong.
+              <br />
+              <span className="text-red-400">Ancient caves,</span>
+              <br />
+              living history.
+            </h1>
+            <p className="text-lg text-stone-200 leading-relaxed mb-8 max-w-lg">
+              Discover UNESCO World Heritage grottoes carved into sandstone cliffs,
+              a temple suspended 75 meters in the air, and a walled city where
+              Ming Dynasty history meets Shanxi&apos;s legendary noodle culture.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Link
+                href="/guides"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-md bg-red-800 text-white font-semibold hover:bg-red-900 transition-colors"
+              >
+                Explore Guides →
+              </Link>
+              <Link
+                href="/itineraries"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-md border border-stone-400 text-white font-semibold hover:bg-white/10 transition-colors"
+              >
+                View Itineraries
+              </Link>
             </div>
           </div>
         </div>
