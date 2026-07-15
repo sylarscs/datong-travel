@@ -31,7 +31,7 @@ export default function AncientCityPage() {
         <h1 className="font-display font-extrabold text-stone-900 text-3xl sm:text-4xl mb-3">Datong Ancient City</h1>
         <p className="text-lg text-stone-600 leading-relaxed max-w-2xl">12-episode walking tour. A full-day loop through 3.28 square kilometers — temples, mosques, churches, markets, and the city wall at sunset.</p>
         <div className="flex flex-wrap gap-3 mt-3 text-xs font-mono text-stone-400">
-          <span>12 episodes</span><span>~45 minutes</span><span>$3.99</span>
+          <span>12 episodes</span><span>~45 minutes</span><span>$4.99</span>
         </div>
         <div className="mt-3 flex items-center gap-2 text-xs text-stone-500">
           <span>⭐ 4.9</span><span>·</span><span>Trusted by travelers from 18 countries</span>
@@ -42,7 +42,7 @@ export default function AncientCityPage() {
         <span className="text-lg">🎁</span>
         <div>
           <p className="font-semibold text-amber-800 text-sm">Free with Any Purchase</p>
-          <p className="text-xs text-amber-700">Buy any guide above and get this Ancient City tour free. Or buy it standalone for <strong>$3.99</strong>.</p>
+          <p className="text-xs text-amber-700">Buy any guide above and get this Ancient City tour free. Or buy it standalone for <strong>$4.99</strong>.</p>
         </div>
       </div>
 
@@ -70,8 +70,8 @@ export default function AncientCityPage() {
       <section className="p-6 sm:p-8 rounded-xl bg-stone-900 text-white text-center mb-10">
         <h2 className="font-display font-bold text-2xl mb-2">Get All 12 Episodes</h2>
         <p className="text-stone-300 mb-2 text-sm">12 episodes · ~45 min · Lifetime access</p>
-        <p className="font-display font-bold text-3xl mb-4">$3.99</p>
-        <button className="px-6 py-3 rounded-md bg-white text-stone-900 font-semibold hover:bg-stone-100 transition-colors">Buy Now — $3.99</button>
+        <p className="font-display font-bold text-3xl mb-4">$4.99</p>
+        <button className="px-6 py-3 rounded-md bg-white text-stone-900 font-semibold hover:bg-stone-100 transition-colors">Buy Now — $4.99</button>
       </section>
 
       <InfoBox type="info" title="Bundle & Save">

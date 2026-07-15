@@ -24,7 +24,7 @@ const GUIDES = [
   },
   {
     id: "yingxian", title: "Yingxian Wooden Pagoda", subtitle: "6 Episodes · ~20 min",
-    price: "$3.99", image: "",
+    price: "$4.99", image: "",
     desc: "The world's oldest wooden pagoda. 67 meters, zero nails, 40+ earthquakes survived. A day trip into Liao Dynasty engineering — and real Shanxi.",
   },
 ];
@@ -83,7 +83,7 @@ export default function PremiumPage() {
         </p>
         <p className="text-lg text-amber-300 font-semibold mb-4">+ Datong Ancient City (12 episodes · 45 min) — FREE</p>
         <p className="font-display font-bold text-3xl mb-1">$19.99</p>
-        <p className="text-xs text-stone-400 mb-4 line-through">$22.96 separately</p>
+        <p className="text-xs text-stone-400 mb-4 line-through">$23.96 separately</p>
         <button className="px-6 py-3 rounded-md bg-white text-stone-900 font-semibold hover:bg-stone-100 transition-colors">
           Get the Bundle — $19.99
         </button>
@@ -99,7 +99,7 @@ export default function PremiumPage() {
         <p className="text-sm text-stone-600 mb-3">12 attractions — Four Archways, Drum Tower, Guandi Temple, Chunyang Palace, Great Mosque, Catholic Church, Wen Miao, Shanhua Temple, Fahua Temple, Nine Dragon Screen, Dongnan Yi, City Wall. A complete full-day loop through 3.28 sq km of living history.</p>
         <div className="flex items-center gap-4">
           <Link href="/premium/ancient-city" className="text-sm font-semibold text-red-800 hover:text-red-900 transition-colors">View episodes →</Link>
-          <span className="text-xs text-stone-400">Also available separately — <span className="font-semibold text-stone-700">$3.99</span></span>
+          <span className="text-xs text-stone-400">Also available separately — <span className="font-semibold text-stone-700">$4.99</span></span>
         </div>
       </div>
     </div>
