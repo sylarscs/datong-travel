@@ -8,10 +8,13 @@ export const metadata = {
 
 const EPISODES = [
   { num: 1, title: "The Greatest Liao Dynasty Temple in China", location: "Temple entrance", duration: "4 min" },
-  { num: 2, title: "The Upper Temple — China's Largest Buddhist Hall", location: "Mahavira Hall", duration: "3 min" },
-  { num: 3, title: "The Lower Temple — The Thousand-Year Library", location: "Bhagavan Sutra Hall", duration: "4 min" },
-  { num: 4, title: "The Pagoda & Gardens — Huayan's Quiet Side", location: "Pagoda and gardens", duration: "2 min" },
-  { num: 5, title: "Why Huayan Matters — Legacy of a Vanished Empire", location: "Exit / temple gate", duration: "2 min" },
+  { num: 2, title: "The Upper Temple — China's Largest Buddhist Hall ★★★", location: "Mahavira Hall", duration: "4 min" },
+  { num: 3, title: "Reading the Frescoes — 880 sqm of Ming Dynasty Art", location: "Upper Temple walls", duration: "3 min" },
+  { num: 4, title: "The Lower Temple — The Thousand-Year Library ★★★", location: "Bhagavan Sutra Hall", duration: "5 min" },
+  { num: 5, title: "The Liao Dynasty Craft — Wood Joinery Without Nails", location: "Lower Temple cabinets", duration: "3 min" },
+  { num: 6, title: "The Pagoda & Gardens — Huayan's Quiet Side", location: "Pagoda and gardens", duration: "2 min" },
+  { num: 7, title: "The Courtyards — Between the Halls", location: "Temple courtyards", duration: "2 min" },
+  { num: 8, title: "Why Huayan Matters — Legacy of a Vanished Empire", location: "Exit / temple gate", duration: "3 min" },
 ];
 
 export default function HuayanPremiumPage() {
@@ -26,7 +29,7 @@ export default function HuayanPremiumPage() {
           5 episodes — China&apos;s largest Buddhist hall, a 1,000-year-old sutra library, and the best surviving monument of the Liao Dynasty.
         </p>
         <div className="flex flex-wrap gap-3 mt-3 text-xs font-mono text-stone-400">
-          <span>5 episodes</span><span>~20 minutes</span><span>$4.99</span>
+          <span>8 episodes</span><span>~30 minutes</span><span>$5.99</span>
         </div>
         <div className="mt-3 flex items-center gap-2 text-xs text-stone-500">
           <span>⭐ 4.9</span><span>·</span><span>Trusted by travelers from 18 countries</span>
