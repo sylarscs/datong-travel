@@ -1,4 +1,4 @@
-const AFFILIATE_URL = "https://www.trip.com/t/LpA5Qh7gWV2";
+const AFFILIATE_URL = "https://www.trip.com/t/0NFNgjygWV2";
 
 export function getAffiliateUrl(): string {
   return AFFILIATE_URL;
