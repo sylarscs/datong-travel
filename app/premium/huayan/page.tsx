@@ -8,9 +8,9 @@ export const metadata = {
 
 const EPISODES = [
   { num: 1, title: "The Greatest Liao Dynasty Temple in China", location: "Temple entrance", duration: "4 min" },
-  { num: 2, title: "The Upper Temple — China's Largest Buddhist Hall ★★★", location: "Mahavira Hall", duration: "4 min" },
+  { num: 2, title: "The Upper Temple — China's Largest Buddhist Hall", location: "Mahavira Hall", duration: "4 min", badge: "Must See" },
   { num: 3, title: "Reading the Frescoes — 880 sqm of Ming Dynasty Art", location: "Upper Temple walls", duration: "3 min" },
-  { num: 4, title: "The Lower Temple — The Thousand-Year Library ★★★", location: "Bhagavan Sutra Hall", duration: "5 min" },
+  { num: 4, title: "The Lower Temple — The Thousand-Year Library", location: "Bhagavan Sutra Hall", duration: "5 min", badge: "Must See" },
   { num: 5, title: "The Liao Dynasty Craft — Wood Joinery Without Nails", location: "Lower Temple cabinets", duration: "3 min" },
   { num: 6, title: "The Pagoda & Gardens — Huayan's Quiet Side", location: "Pagoda and gardens", duration: "2 min" },
   { num: 7, title: "The Courtyards — Between the Halls", location: "Temple courtyards", duration: "2 min" },
@@ -51,7 +51,10 @@ export default function HuayanPremiumPage() {
             <div key={ep.num} className="flex items-start gap-3 p-3 rounded-lg border border-stone-200 bg-white">
               <span className="flex-shrink-0 w-7 h-7 rounded-full bg-stone-900 text-white flex items-center justify-center text-xs font-semibold">{ep.num}</span>
               <div className="flex-1 min-w-0">
-                <h3 className="font-semibold text-stone-900 text-sm">{ep.title}</h3>
+                <div className="flex items-center gap-2">
+                  <h3 className="font-semibold text-stone-900 text-sm">{ep.title}</h3>
+                  {(ep as any).badge && <span className="flex-shrink-0 px-1.5 py-0.5 rounded text-[10px] font-bold bg-red-100 text-red-800">{(ep as any).badge}</span>}
+                </div>
                 <p className="text-xs text-stone-400 font-mono">{ep.location} · {ep.duration}</p>
               </div>
               <span className="flex-shrink-0 px-2 py-0.5 rounded text-[10px] font-semibold bg-stone-900 text-white">PREMIUM</span>

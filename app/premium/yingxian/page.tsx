@@ -8,7 +8,7 @@ export const metadata = {
 
 const EPISODES = [
   { num: 1, title: "A Thousand Years of Wood", duration: "3 min", desc: "The oldest and tallest wooden pagoda on Earth. 67m, 1056 AD, built without a single nail." },
-  { num: 2, title: "The Engineering — 54 Bracket Sets, Zero Nails ★★★", duration: "5 min", desc: "54 different dougong designs. Why it leans 2° but won't fall. The tuned mass damper principle — applied 900 years before it was 'invented.'" },
+  { num: 2, title: "The Engineering — 54 Bracket Sets, Zero Nails", duration: "5 min", badge: "Must See", desc: "54 different dougong designs. Why it leans 2° but won't fall. The tuned mass damper principle — applied 900 years before it was 'invented.'" },
   { num: 3, title: "The Liao Dynasty — Khitan Builders", duration: "3 min", desc: "Who the Khitan were. Nomads who became master builders. How steppe culture created China's greatest wooden structure." },
   { num: 4, title: "Inside the Pagoda — What You Can See", duration: "3 min", desc: "The 11m Sakyamuni Buddha on the ground floor. What's above (and why you can't go there). The pagoda as vertical museum." },
   { num: 5, title: "The Town of Yingxian", duration: "2 min", desc: "Morning markets, chess players, noodle shops. The real Shanxi county town that most visitors rush past." },
@@ -47,7 +47,10 @@ export default function YingxianPremiumPage() {
             <div key={ep.num} className="flex items-start gap-3 p-3 rounded-lg border border-stone-200 bg-white">
               <span className="flex-shrink-0 w-7 h-7 rounded-full bg-stone-900 text-white flex items-center justify-center text-xs font-semibold">{ep.num}</span>
               <div className="flex-1 min-w-0">
-                <h3 className="font-semibold text-stone-900 text-sm">{ep.title}</h3>
+                <div className="flex items-center gap-2">
+                  <h3 className="font-semibold text-stone-900 text-sm">{ep.title}</h3>
+                  {(ep as any).badge && <span className="flex-shrink-0 px-1.5 py-0.5 rounded text-[10px] font-bold bg-red-100 text-red-800">{(ep as any).badge}</span>}
+                </div>
                 <p className="text-xs text-stone-500 mt-0.5">{ep.desc}</p>
                 <p className="text-xs text-stone-400 font-mono">{ep.duration}</p>
               </div>
