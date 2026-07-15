@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Playfair_Display, Source_Sans_3, JetBrains_Mono } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { GoogleAnalytics } from "@/components/layout/GoogleAnalytics";
 import "./globals.css";
 
 const playfairDisplay = Playfair_Display({
@@ -71,6 +72,7 @@ export default function RootLayout({
       className={`${playfairDisplay.variable} ${sourceSans3.variable} ${jetbrainsMono.variable} h-full`}
     >
       <body className="min-h-full flex flex-col bg-paper text-stone-700 font-body antialiased">
+        <GoogleAnalytics />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

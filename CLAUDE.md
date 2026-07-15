@@ -60,12 +60,26 @@
 /app/                   ← Next.js App Router 页面
 ```
 
-## Current Content (4 articles)
+## Current Content (6 articles)
 
-1. `/guides/datong-travel-guide` — 大同旅游总攻略（cornerstone, ~3000 words）
+1. `/guides/datong-travel-guide` — 大同旅游总攻略（cornerstone）
 2. `/guides/yungang-grottoes` — 云冈石窟详细攻略
 3. `/guides/hanging-temple` — 悬空寺详细攻略
-4. `/itineraries/3-day-datong` — 3 日大同行程
+4. `/guides/datong-food-guide` — 大同美食指南（10 道必吃 + 餐厅推荐）
+5. `/guides/beijing-to-datong-transport` — 北京→大同火车全攻略
+6. `/itineraries/3-day-datong` — 3 日大同行程
+
+## Features Built
+
+- Trip.com affiliate links (hotels, tickets, trains) with click tracking
+- Email subscription API (Resend, ready to activate)
+- Table of Contents (sticky sidebar on desktop)
+- FAQ accordion component
+- Breadcrumb navigation with JSON-LD structured data
+- SEO: metadata, JSON-LD, sitemap.xml, robots.txt, canonical URLs
+- Google Analytics (GA4, via NEXT_PUBLIC_GA_ID env var)
+- 404 page
+- Mobile-responsive, all breakpoints tested
 
 ## Trip.com Affiliate Integration
 
@@ -87,9 +101,9 @@ RESEND_API_KEY=re_4QFpzJi7_H7KqLmvUvB84Gdn1nudVbbrr
 ## Next Steps (优先级排序)
 
 1. **部署到 Vercel** — 用户需先注册 vercel.com 账号
-2. **写更多内容** — Datong Food Guide, How to Get to Datong from Beijing, Ancient City Walking Guide
-3. **SEO 验证** — Google Search Console + sitemap 提交
-4. **Analytics** — 接入 Google Analytics 和 Vercel Analytics
+2. **Google Analytics** — 创建 GA4 property → 获得 Measurement ID (G-XXXXXXXXXX) → 填入 .env.local 的 NEXT_PUBLIC_GA_ID
+3. **Google Search Console** — 提交 sitemap，验证站点
+4. **写更多内容** — Ancient City Walking Guide, 5-Day Shanxi Route
 5. **Email 系统完善** — Resend 集成发送欢迎邮件 + PDF lead magnet
 6. **付费产品** — 深度攻略 PDF / 定制行程服务（流量起来后）
 
