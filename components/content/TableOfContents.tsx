@@ -52,8 +52,8 @@ export function TableOfContents({ items }: { items: TOCItem[] }) {
               }}
               className={`block py-1 transition-colors ${
                 activeId === item.id
-                  ? "text-red-600 font-medium"
-                  : "text-stone-700 hover:text-red-600"
+                  ? "text-red-700 font-medium"
+                  : "text-stone-700 hover:text-red-700"
               }`}
             >
               {item.text}

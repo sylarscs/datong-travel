@@ -22,7 +22,7 @@ export default function HomePage() {
             <h1 className="font-display font-extrabold text-stone-900 leading-[1.1] mb-6">
               Datong.
               <br />
-              <span className="text-red-600">Ancient caves,</span>
+              <span className="text-red-700">Ancient caves,</span>
               <br />
               living history.
             </h1>
@@ -38,7 +38,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 href="/guides"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-md bg-red-600 text-white font-semibold hover:bg-red-700 transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-md bg-red-700 text-white font-semibold hover:bg-red-700 transition-colors"
               >
                 Explore Guides →
               </Link>
@@ -113,7 +113,7 @@ export default function HomePage() {
             </div>
             <Link
               href="/guides"
-              className="hidden sm:inline-flex text-sm font-semibold text-red-600 hover:text-red-700 transition-colors"
+              className="hidden sm:inline-flex text-sm font-semibold text-red-700 hover:text-red-700 transition-colors"
             >
               All Guides →
             </Link>
@@ -141,7 +141,7 @@ export default function HomePage() {
                     )}
                   </div>
                   <div className="p-5">
-                    <h3 className="font-display font-bold text-lg text-stone-900 group-hover:text-red-600 transition-colors leading-tight">
+                    <h3 className="font-display font-bold text-lg text-stone-900 group-hover:text-red-700 transition-colors leading-tight">
                       {guide.frontmatter.title}
                     </h3>
                     <p className="mt-2 text-sm text-stone-400 line-clamp-2 leading-relaxed">
@@ -167,7 +167,7 @@ export default function HomePage() {
 
           <Link
             href="/guides"
-            className="sm:hidden mt-6 block text-center text-sm font-semibold text-red-600"
+            className="sm:hidden mt-6 block text-center text-sm font-semibold text-red-700"
           >
             All Guides →
           </Link>
@@ -190,10 +190,10 @@ export default function HomePage() {
             <Link
               key={item.name}
               href={item.href}
-              className="flex flex-col items-center gap-2 p-4 rounded-xl border border-stone-200 bg-white hover:border-red-600/20 hover:shadow-sm transition-all group"
+              className="flex flex-col items-center gap-2 p-4 rounded-xl border border-stone-200 bg-white hover:border-red-700/20 hover:shadow-sm transition-all group"
             >
               <span className="text-2xl">{item.icon}</span>
-              <span className="text-xs font-semibold text-stone-900 group-hover:text-red-600 transition-colors text-center">
+              <span className="text-xs font-semibold text-stone-900 group-hover:text-red-700 transition-colors text-center">
                 {item.name}
               </span>
             </Link>
@@ -222,7 +222,7 @@ export default function HomePage() {
                   href={getAffiliateUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-5 py-3 rounded-md bg-red-600 text-white font-semibold hover:bg-red-700 transition-colors"
+                  className="inline-flex items-center px-5 py-3 rounded-md bg-red-700 text-white font-semibold hover:bg-red-700 transition-colors"
                 >
                   Browse Hotels on Trip.com →
                 </a>
@@ -263,7 +263,7 @@ export default function HomePage() {
             English-language guides. Every recommendation is independently researched.
             Some links are affiliate links — we earn a small commission at no cost to you,
             which helps keep this site running.{" "}
-            <Link href="/about" className="text-red-600 font-medium hover:text-red-700">
+            <Link href="/about" className="text-red-700 font-medium hover:text-red-700">
               Learn more →
             </Link>
           </p>

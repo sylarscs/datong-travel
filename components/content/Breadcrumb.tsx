@@ -48,7 +48,7 @@ export function Breadcrumb({ items }: { items: Crumb[] }) {
             {item.href && index < items.length - 1 ? (
               <Link
                 href={item.href}
-                className="hover:text-red-600 transition-colors"
+                className="hover:text-red-700 transition-colors"
               >
                 {item.label}
               </Link>

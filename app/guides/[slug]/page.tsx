@@ -147,7 +147,7 @@ async function RelatedGuides({ currentSlug }: { currentSlug: string }) {
           href={`/guides/${g.slug}`}
           className="p-4 rounded-lg border border-stone-200 bg-white hover:shadow-sm transition-all group"
         >
-          <h4 className="font-semibold text-sm text-stone-900 group-hover:text-red-600 transition-colors">
+          <h4 className="font-semibold text-sm text-stone-900 group-hover:text-red-700 transition-colors">
             {g.frontmatter.title}
           </h4>
           <p className="text-xs text-stone-400 mt-1 line-clamp-2">

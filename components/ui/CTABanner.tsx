@@ -20,7 +20,7 @@ export function CTABanner({
   const variantStyles: Record<string, string> = {
     teal: "bg-teal-50 border border-teal-600",
     stone: "bg-stone-100 border border-stone-200",
-    red: "bg-red-50 border border-red-600",
+    red: "bg-red-50 border border-red-700",
   };
 
   async function handleSubmit(e: React.FormEvent) {
@@ -68,12 +68,12 @@ export function CTABanner({
               onChange={(e) => setEmail(e.target.value)}
               placeholder="your@email.com"
               required
-              className="flex-1 px-4 py-2.5 rounded-md border border-stone-200 bg-white text-sm text-stone-900 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-red-600/30 focus:border-red-600 transition-shadow"
+              className="flex-1 px-4 py-2.5 rounded-md border border-stone-200 bg-white text-sm text-stone-900 placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-red-700/30 focus:border-red-700 transition-shadow"
             />
             <button
               type="submit"
               disabled={status === "loading"}
-              className="px-5 py-2.5 rounded-md bg-red-600 text-white text-sm font-semibold hover:bg-red-700 disabled:opacity-50 transition-colors flex-shrink-0"
+              className="px-5 py-2.5 rounded-md bg-red-700 text-white text-sm font-semibold hover:bg-red-700 disabled:opacity-50 transition-colors flex-shrink-0"
             >
               {status === "loading" ? "Sending..." : buttonText}
             </button>
@@ -81,7 +81,7 @@ export function CTABanner({
         )}
 
         {status === "error" && (
-          <p className="text-red-600 text-xs mt-2">{message}</p>
+          <p className="text-red-700 text-xs mt-2">{message}</p>
         )}
 
         <p className="text-xs text-stone-400 mt-3">

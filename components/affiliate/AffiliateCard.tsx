@@ -48,13 +48,13 @@ export function AffiliateCard({
         </div>
       )}
       <div className="flex-1 min-w-0">
-        <h4 className="font-semibold text-stone-900 group-hover:text-red-600 transition-colors">
+        <h4 className="font-semibold text-stone-900 group-hover:text-red-700 transition-colors">
           {title}
         </h4>
         <p className="text-sm text-stone-400 mt-0.5 line-clamp-1">{description}</p>
         <p className="text-sm font-mono text-stone-900 mt-1">{price}</p>
       </div>
-      <span className="flex-shrink-0 inline-flex items-center px-3 py-1.5 rounded-md bg-red-600 text-white text-sm font-semibold group-hover:bg-red-700 transition-colors">
+      <span className="flex-shrink-0 inline-flex items-center px-3 py-1.5 rounded-md bg-red-700 text-white text-sm font-semibold group-hover:bg-red-700 transition-colors">
         {typeLabel[type]} →
       </span>
     </a>
@@ -101,7 +101,7 @@ export function AffiliateHotelCard({
       </div>
       <div className="p-4">
         <div className="flex items-start justify-between gap-2">
-          <h4 className="font-semibold text-stone-900 group-hover:text-red-600 transition-colors">
+          <h4 className="font-semibold text-stone-900 group-hover:text-red-700 transition-colors">
             {name}
           </h4>
           {rating && (
@@ -113,7 +113,7 @@ export function AffiliateHotelCard({
         <p className="text-sm text-stone-400 mt-1">{location}</p>
         <div className="flex items-center justify-between mt-3">
           <span className="text-sm font-mono text-stone-900">{priceRange}</span>
-          <span className="text-sm font-semibold text-red-600 group-hover:translate-x-0.5 transition-transform">
+          <span className="text-sm font-semibold text-red-700 group-hover:translate-x-0.5 transition-transform">
             Check Availability →
           </span>
         </div>
@@ -141,17 +141,17 @@ export function AffiliateTicketCard({
       target="_blank"
       rel="noopener noreferrer"
       onClick={() => trackAffiliateClick("ticket", name, AFFILIATE_URL)}
-      className="group flex items-center justify-between p-4 rounded-lg border border-stone-200 bg-white hover:border-red-600/20 hover:shadow-sm transition-all duration-200"
+      className="group flex items-center justify-between p-4 rounded-lg border border-stone-200 bg-white hover:border-red-700/20 hover:shadow-sm transition-all duration-200"
     >
       <div>
-        <h4 className="font-semibold text-stone-900 group-hover:text-red-600 transition-colors">
+        <h4 className="font-semibold text-stone-900 group-hover:text-red-700 transition-colors">
           {name}
         </h4>
         <p className="text-sm text-stone-400 mt-0.5">{description}</p>
       </div>
       <div className="flex items-center gap-3 flex-shrink-0">
         <span className="text-sm font-mono text-stone-900">{price}</span>
-        <span className="px-3 py-1.5 rounded-md bg-red-600 text-white text-sm font-semibold group-hover:bg-red-700 transition-colors">
+        <span className="px-3 py-1.5 rounded-md bg-red-700 text-white text-sm font-semibold group-hover:bg-red-700 transition-colors">
           Book →
         </span>
       </div>

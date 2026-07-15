@@ -10,7 +10,7 @@ body {
 }
 
 *:focus-visible {
-  outline: 2px solid #dc2626;
+  outline: 2px solid #b91c1c;
   outline-offset: 2px;
 }
 
@@ -32,8 +32,14 @@ h3 { font-size: clamp(1.25rem, 2.5vw, 1.5rem); }
 
 p { line-height: 1.75; margin-bottom: 1.25rem; }
 
-a { color: #dc2626; text-decoration: none; transition: color 0.15s ease; }
-a:hover { color: #b91c1c; }
+/* Link styling — only inside article content, not on buttons/nav */
+.article-content a {
+  color: #b91c1c;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: #d6d3d1;
+}
+.article-content a:hover { color: #991b1b; text-decoration-color: #b91c1c; }
 
 .article-content h2 {
   margin-top: 3rem;

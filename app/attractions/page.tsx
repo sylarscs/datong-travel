@@ -63,7 +63,7 @@ export default function AttractionsPage() {
                     href={`/attractions/${guides.find((g) =>
                       g.slug.includes(attr.name.toLowerCase().split(" ")[0])
                     )?.slug}`}
-                    className="px-4 py-2 rounded-md bg-red-600 text-white text-sm font-semibold text-center hover:bg-red-700 transition-colors"
+                    className="px-4 py-2 rounded-md bg-red-700 text-white text-sm font-semibold text-center hover:bg-red-700 transition-colors"
                   >
                     Full Guide →
                   </Link>

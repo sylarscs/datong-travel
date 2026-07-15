@@ -25,22 +25,22 @@ export function Footer() {
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/guides" className="text-sm text-stone-700 hover:text-red-600 transition-colors">
+                <Link href="/guides" className="text-sm text-stone-700 hover:text-red-700 transition-colors">
                   Travel Guides
                 </Link>
               </li>
               <li>
-                <Link href="/attractions" className="text-sm text-stone-700 hover:text-red-600 transition-colors">
+                <Link href="/attractions" className="text-sm text-stone-700 hover:text-red-700 transition-colors">
                   Attractions
                 </Link>
               </li>
               <li>
-                <Link href="/itineraries" className="text-sm text-stone-700 hover:text-red-600 transition-colors">
+                <Link href="/itineraries" className="text-sm text-stone-700 hover:text-red-700 transition-colors">
                   Itineraries
                 </Link>
               </li>
               <li>
-                <Link href="/transportation" className="text-sm text-stone-700 hover:text-red-600 transition-colors">
+                <Link href="/transportation" className="text-sm text-stone-700 hover:text-red-700 transition-colors">
                   Getting Around
                 </Link>
               </li>
@@ -54,22 +54,22 @@ export function Footer() {
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link href="/practical-info" className="text-sm text-stone-700 hover:text-red-600 transition-colors">
+                <Link href="/practical-info" className="text-sm text-stone-700 hover:text-red-700 transition-colors">
                   Visa & Info
                 </Link>
               </li>
               <li>
-                <Link href="/practical-info#weather" className="text-sm text-stone-700 hover:text-red-600 transition-colors">
+                <Link href="/practical-info#weather" className="text-sm text-stone-700 hover:text-red-700 transition-colors">
                   Weather & When to Go
                 </Link>
               </li>
               <li>
-                <Link href="/practical-info#apps" className="text-sm text-stone-700 hover:text-red-600 transition-colors">
+                <Link href="/practical-info#apps" className="text-sm text-stone-700 hover:text-red-700 transition-colors">
                   Essential Apps
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-sm text-stone-700 hover:text-red-600 transition-colors">
+                <Link href="/about" className="text-sm text-stone-700 hover:text-red-700 transition-colors">
                   About Us
                 </Link>
               </li>
@@ -86,7 +86,7 @@ export function Footer() {
             </p>
             <Link
               href="/#checklist"
-              className="inline-block px-4 py-2 rounded-md bg-red-600 text-white text-sm font-semibold hover:bg-red-700 transition-colors"
+              className="inline-block px-4 py-2 rounded-md bg-red-700 text-white text-sm font-semibold hover:bg-red-700 transition-colors"
             >
               Get the Checklist →
             </Link>
