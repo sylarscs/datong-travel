@@ -72,7 +72,7 @@ export default async function AttractionPage({ params }: Props) {
           <p className="text-lg text-stone-700 leading-relaxed mb-4">
             {item.frontmatter.description}
           </p>
-          <div className="flex items-center gap-4 text-xs text-sand-500 font-mono">
+          <div className="flex items-center gap-4 text-xs text-stone-400 font-mono">
             <time>
               Updated{" "}
               {new Date(

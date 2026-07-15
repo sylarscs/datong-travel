@@ -1,26 +1,9 @@
 const AID = process.env.NEXT_PUBLIC_TRIPCOM_AFFILIATE_ID || "9288868";
 const SID = process.env.NEXT_PUBLIC_TRIPCOM_SID || "324376718";
-const TRIP_SUB3 = "D18694321";
+const TRIP_SUB3 = "D18695875";
 
-/**
- * Build a Trip.com affiliate URL.
- * Uses the user's real affiliate format with hk.trip.com base.
- */
-export function getAffiliateUrl(destinationUrl: string, sid?: string): string {
-  try {
-    const url = new URL(destinationUrl);
-    // Rewrite to hk.trip.com if using www.trip.com (user's affiliate account is HK-based)
-    if (url.hostname === "www.trip.com") {
-      url.hostname = "hk.trip.com";
-    }
-    url.searchParams.set("Allianceid", AID);
-    url.searchParams.set("SID", sid || SID);
-    url.searchParams.set("trip_sub3", TRIP_SUB3);
-    return url.toString();
-  } catch {
-    // Fallback: if URL parsing fails, return as-is
-    return destinationUrl;
-  }
+export function getAffiliateUrl(): string {
+  return `https://hk.trip.com/?Allianceid=${AID}&SID=${SID}&trip_sub1=&trip_sub3=${TRIP_SUB3}`;
 }
 
 export function trackAffiliateClick(
@@ -37,10 +20,3 @@ export function trackAffiliateClick(
     });
   }
 }
-
-export const TRIPCOM_LINKS = {
-  datongHotels: "https://hk.trip.com/hotels/datong-hotels/",
-  datongAttractions: "https://hk.trip.com/travel-guide/datong/attractions/",
-  chinaTrains: "https://hk.trip.com/trains/china/",
-  beijingToDatongTrain: "https://hk.trip.com/trains/china/route/beijing-to-datong/",
-} as const;

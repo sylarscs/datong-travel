@@ -34,7 +34,7 @@ export function TableOfContents({ items }: { items: TOCItem[] }) {
   if (items.length === 0) return null;
 
   return (
-    <nav className="p-4 rounded-lg border border-sand-200 bg-sand-100 text-sm">
+    <nav className="p-4 rounded-lg border border-stone-200 bg-stone-100 text-sm">
       <h4 className="font-semibold text-stone-900 mb-3 text-xs uppercase tracking-wider">
         On This Page
       </h4>
@@ -52,8 +52,8 @@ export function TableOfContents({ items }: { items: TOCItem[] }) {
               }}
               className={`block py-1 transition-colors ${
                 activeId === item.id
-                  ? "text-cinnabar font-medium"
-                  : "text-stone-700 hover:text-cinnabar"
+                  ? "text-red-600 font-medium"
+                  : "text-stone-700 hover:text-red-600"
               }`}
             >
               {item.text}

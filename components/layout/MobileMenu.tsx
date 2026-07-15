@@ -46,13 +46,13 @@ export function MobileMenu({ open, onClose, links }: MobileMenuProps) {
       {/* Panel */}
       <div
         ref={panelRef}
-        className="absolute top-0 right-0 bottom-0 w-72 bg-paper shadow-xl border-l border-sand-200 p-6 flex flex-col animate-[slideIn_200ms_ease-out]"
+        className="absolute top-0 right-0 bottom-0 w-72 bg-stone-50 shadow-xl border-l border-stone-200 p-6 flex flex-col animate-[slideIn_200ms_ease-out]"
       >
         {/* Close */}
         <div className="flex justify-end">
           <button
             onClick={onClose}
-            className="p-2 rounded-md text-stone-700 hover:bg-sand-100 transition-colors"
+            className="p-2 rounded-md text-stone-700 hover:bg-stone-100 transition-colors"
             aria-label="Close menu"
           >
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" strokeWidth="2">
@@ -66,7 +66,7 @@ export function MobileMenu({ open, onClose, links }: MobileMenuProps) {
           <Link
             href="/"
             onClick={onClose}
-            className="px-3 py-3 rounded-md font-semibold text-stone-900 hover:bg-sand-100 transition-colors"
+            className="px-3 py-3 rounded-md font-semibold text-stone-900 hover:bg-stone-100 transition-colors"
           >
             Home
           </Link>
@@ -75,18 +75,18 @@ export function MobileMenu({ open, onClose, links }: MobileMenuProps) {
               key={link.href}
               href={link.href}
               onClick={onClose}
-              className="px-3 py-3 rounded-md font-medium text-stone-700 hover:text-cinnabar hover:bg-sand-100 transition-colors"
+              className="px-3 py-3 rounded-md font-medium text-stone-700 hover:text-red-600 hover:bg-stone-100 transition-colors"
             >
               {link.label}
             </Link>
           ))}
         </nav>
 
-        <div className="mt-6 pt-6 border-t border-sand-200">
+        <div className="mt-6 pt-6 border-t border-stone-200">
           <Link
             href="/#checklist"
             onClick={onClose}
-            className="block w-full text-center px-4 py-3 rounded-md bg-cinnabar text-white font-semibold hover:bg-cinnabar-hover transition-colors"
+            className="block w-full text-center px-4 py-3 rounded-md bg-red-600 text-white font-semibold hover:bg-red-700 transition-colors"
           >
             Get Free Guide →
           </Link>

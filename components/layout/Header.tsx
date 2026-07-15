@@ -15,14 +15,14 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-paper/95 backdrop-blur-sm border-b border-sand-200">
+    <header className="sticky top-0 z-50 bg-stone-50/95 backdrop-blur-sm border-b border-stone-200">
       <nav className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link
           href="/"
           className="flex items-center gap-2 no-underline hover:opacity-80 transition-opacity"
         >
-          <span className="w-8 h-8 rounded-lg bg-cinnabar flex items-center justify-center">
+          <span className="w-8 h-8 rounded-lg bg-red-600 flex items-center justify-center">
             <svg
               width="16"
               height="16"
@@ -47,14 +47,14 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="px-3 py-2 rounded-md text-sm font-medium text-stone-700 hover:text-cinnabar hover:bg-sand-100 transition-colors"
+              className="px-3 py-2 rounded-md text-sm font-medium text-stone-700 hover:text-red-600 hover:bg-stone-100 transition-colors"
             >
               {link.label}
             </Link>
           ))}
           <Link
             href="/practical-info"
-            className="px-3 py-2 rounded-md text-sm font-medium text-stone-700 hover:text-cinnabar hover:bg-sand-100 transition-colors"
+            className="px-3 py-2 rounded-md text-sm font-medium text-stone-700 hover:text-red-600 hover:bg-stone-100 transition-colors"
           >
             Practical Info
           </Link>
@@ -64,7 +64,7 @@ export function Header() {
         <div className="hidden md:flex items-center gap-3">
           <Link
             href="/#checklist"
-            className="px-4 py-2 rounded-md bg-cinnabar text-white text-sm font-semibold hover:bg-cinnabar-hover transition-colors"
+            className="px-4 py-2 rounded-md bg-red-600 text-white text-sm font-semibold hover:bg-red-700 transition-colors"
           >
             Free Guide
           </Link>
@@ -73,7 +73,7 @@ export function Header() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMobileOpen(true)}
-          className="md:hidden p-2 rounded-md text-stone-700 hover:bg-sand-100 transition-colors"
+          className="md:hidden p-2 rounded-md text-stone-700 hover:bg-stone-100 transition-colors"
           aria-label="Open menu"
         >
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="2">

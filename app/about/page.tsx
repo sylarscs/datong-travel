@@ -51,7 +51,7 @@ export default function AboutPage() {
       </section>
 
       {/* How We Make Money */}
-      <section className="mb-10 p-6 rounded-xl border border-sand-200 bg-sand-100">
+      <section className="mb-10 p-6 rounded-xl border border-stone-200 bg-stone-100">
         <h2 className="font-display font-bold text-lg text-stone-900 mb-3">
           How We Make Money
         </h2>
@@ -74,7 +74,7 @@ export default function AboutPage() {
           The Team
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div className="p-5 rounded-xl border border-sand-200 bg-white">
+          <div className="p-5 rounded-xl border border-stone-200 bg-white">
             <h3 className="font-semibold text-stone-900">Content & Research</h3>
             <p className="text-sm text-stone-700 mt-2 leading-relaxed">
               Based in Shanxi, we spend our weekends exploring Datong&apos;s alleys,
@@ -82,7 +82,7 @@ export default function AboutPage() {
               guide is written from firsthand experience.
             </p>
           </div>
-          <div className="p-5 rounded-xl border border-sand-200 bg-white">
+          <div className="p-5 rounded-xl border border-stone-200 bg-white">
             <h3 className="font-semibold text-stone-900">Growth & Marketing</h3>
             <p className="text-sm text-stone-700 mt-2 leading-relaxed">
               We handle SEO, social media, and partnerships to make sure this guide
@@ -104,13 +104,13 @@ export default function AboutPage() {
         </p>
         <p className="text-sm text-stone-700">
           📧 Email us at{" "}
-          <a href="mailto:hello@datongguide.com" className="text-cinnabar font-medium">
+          <a href="mailto:hello@datongguide.com" className="text-red-600 font-medium">
             hello@datongguide.com
           </a>
         </p>
       </section>
 
-      <CTABanner variant="sand" />
+      <CTABanner variant="stone" />
     </div>
   );
 }

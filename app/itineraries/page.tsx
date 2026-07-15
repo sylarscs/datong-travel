@@ -36,17 +36,17 @@ export default function ItinerariesPage() {
             <Link
               key={itin.slug}
               href={`/itineraries/${itin.slug}`}
-              className="block rounded-xl border border-sand-200 bg-white p-6 hover:shadow-lg transition-all group"
+              className="block rounded-xl border border-stone-200 bg-white p-6 hover:shadow-lg transition-all group"
             >
-              <h2 className="font-display font-bold text-xl text-stone-900 group-hover:text-cinnabar transition-colors">
+              <h2 className="font-display font-bold text-xl text-stone-900 group-hover:text-red-600 transition-colors">
                 {itin.frontmatter.title}
               </h2>
               <p className="mt-2 text-stone-700 leading-relaxed">
                 {itin.frontmatter.description}
               </p>
-              <div className="mt-3 flex items-center gap-4 text-xs text-sand-500 font-mono">
+              <div className="mt-3 flex items-center gap-4 text-xs text-stone-400 font-mono">
                 <span>{itin.readingTime} min read</span>
-                <span className="px-2 py-0.5 rounded-full bg-sand-100">
+                <span className="px-2 py-0.5 rounded-full bg-stone-100">
                   {itin.slug.includes("3-day") ? "Most Popular" : "Itinerary"}
                 </span>
               </div>
@@ -55,8 +55,8 @@ export default function ItinerariesPage() {
         </div>
       ) : (
         <div className="text-center py-20">
-          <p className="text-sand-500 text-lg mb-4">Itineraries coming soon!</p>
-          <p className="text-sand-500 text-sm">
+          <p className="text-stone-400 text-lg mb-4">Itineraries coming soon!</p>
+          <p className="text-stone-400 text-sm">
             We&apos;re building detailed day-by-day plans. Sign up to get notified when they&apos;re ready.
           </p>
         </div>

@@ -36,9 +36,9 @@ export default function GuidesPage() {
             <Link
               key={guide.slug}
               href={`/guides/${guide.slug}`}
-              className="group block rounded-xl overflow-hidden border border-sand-200 bg-white hover:shadow-lg transition-all"
+              className="group block rounded-xl overflow-hidden border border-stone-200 bg-white hover:shadow-lg transition-all"
             >
-              <div className="aspect-[16/10] bg-gradient-to-br from-sand-200 to-sand-100 flex items-center justify-center">
+              <div className="aspect-[16/10] bg-gradient-to-br from-stone-200 to-stone-100 flex items-center justify-center">
                 {guide.frontmatter.image ? (
                   <img
                     src={guide.frontmatter.image}
@@ -55,20 +55,20 @@ export default function GuidesPage() {
                     {guide.frontmatter.tags.slice(0, 2).map((tag) => (
                       <span
                         key={tag}
-                        className="px-2 py-0.5 rounded-full text-[10px] font-medium bg-sand-100 text-sand-500"
+                        className="px-2 py-0.5 rounded-full text-[10px] font-medium bg-stone-100 text-stone-400"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
                 )}
-                <h2 className="font-display font-bold text-lg text-stone-900 group-hover:text-cinnabar transition-colors leading-tight">
+                <h2 className="font-display font-bold text-lg text-stone-900 group-hover:text-red-600 transition-colors leading-tight">
                   {guide.frontmatter.title}
                 </h2>
-                <p className="mt-2 text-sm text-sand-500 line-clamp-2">
+                <p className="mt-2 text-sm text-stone-400 line-clamp-2">
                   {guide.frontmatter.description}
                 </p>
-                <div className="mt-3 text-xs text-sand-500 font-mono">
+                <div className="mt-3 text-xs text-stone-400 font-mono">
                   {guide.readingTime} min read
                 </div>
               </div>
@@ -77,11 +77,11 @@ export default function GuidesPage() {
         </div>
       ) : (
         <div className="text-center py-20">
-          <p className="text-sand-500 text-lg mb-4">Guides are being written!</p>
-          <p className="text-sand-500 text-sm">
+          <p className="text-stone-400 text-lg mb-4">Guides are being written!</p>
+          <p className="text-stone-400 text-sm">
             We&apos;re crafting the most detailed Datong guides on the internet.
             Check back soon, or{" "}
-            <Link href="/#checklist" className="text-cinnabar font-medium">
+            <Link href="/#checklist" className="text-red-600 font-medium">
               sign up for our newsletter
             </Link>{" "}
             to get notified when new guides are published.

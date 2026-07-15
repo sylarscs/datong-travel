@@ -4,25 +4,25 @@ type InfoBoxType = "tip" | "warning" | "info" | "highlight";
 
 const STYLES: Record<InfoBoxType, { bg: string; border: string; icon: string; label: string; labelColor: string }> = {
   tip: {
-    bg: "bg-jade-50",
-    border: "border-l-[3px] border-jade",
+    bg: "bg-teal-50",
+    border: "border-l-[3px] border-teal-600",
     icon: "💡",
     label: "Local Tip",
-    labelColor: "text-jade",
+    labelColor: "text-teal-600",
   },
   warning: {
     bg: "bg-red-50",
-    border: "border-l-[3px] border-cinnabar",
+    border: "border-l-[3px] border-red-600",
     icon: "⚠️",
     label: "Important",
-    labelColor: "text-cinnabar",
+    labelColor: "text-red-600",
   },
   info: {
-    bg: "bg-sand-100",
-    border: "border-l-[3px] border-sand-300",
+    bg: "bg-stone-100",
+    border: "border-l-[3px] border-stone-300",
     icon: "ℹ️",
     label: "Info",
-    labelColor: "text-sand-500",
+    labelColor: "text-stone-400",
   },
   highlight: {
     bg: "bg-amber-50",

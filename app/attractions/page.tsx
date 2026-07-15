@@ -36,7 +36,7 @@ export default function AttractionsPage() {
         {attractions.map((attr) => (
           <div
             key={attr.name}
-            className="rounded-xl border border-sand-200 bg-white p-5 sm:p-6 hover:shadow-md transition-shadow"
+            className="rounded-xl border border-stone-200 bg-white p-5 sm:p-6 hover:shadow-md transition-shadow"
           >
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
               <div className="flex-1">
@@ -44,14 +44,14 @@ export default function AttractionsPage() {
                   <h2 className="font-display font-bold text-lg text-stone-900">
                     {attr.name}
                   </h2>
-                  <span className="text-xs text-sand-500 font-mono">
+                  <span className="text-xs text-stone-400 font-mono">
                     {attr.nameZh}
                   </span>
                 </div>
                 <p className="text-sm text-stone-700 leading-relaxed">
                   {attr.description}
                 </p>
-                <div className="mt-3 flex flex-wrap gap-3 text-xs text-sand-500">
+                <div className="mt-3 flex flex-wrap gap-3 text-xs text-stone-400">
                   <span className="font-mono">🎫 {attr.ticketPrice}</span>
                   <span className="font-mono">🕐 {attr.hours}</span>
                   <span className="font-mono">⏱️ {attr.duration}</span>
@@ -63,12 +63,12 @@ export default function AttractionsPage() {
                     href={`/attractions/${guides.find((g) =>
                       g.slug.includes(attr.name.toLowerCase().split(" ")[0])
                     )?.slug}`}
-                    className="px-4 py-2 rounded-md bg-cinnabar text-white text-sm font-semibold text-center hover:bg-cinnabar-hover transition-colors"
+                    className="px-4 py-2 rounded-md bg-red-600 text-white text-sm font-semibold text-center hover:bg-red-700 transition-colors"
                   >
                     Full Guide →
                   </Link>
                 ) : (
-                  <span className="px-4 py-2 rounded-md bg-sand-100 text-sand-500 text-sm text-center">
+                  <span className="px-4 py-2 rounded-md bg-stone-100 text-stone-400 text-sm text-center">
                     Guide Coming Soon
                   </span>
                 )}

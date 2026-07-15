@@ -17,11 +17,11 @@ export function FAQ({ items }: { items: FAQItem[] }) {
         return (
           <div
             key={index}
-            className="border border-sand-200 rounded-lg overflow-hidden"
+            className="border border-stone-200 rounded-lg overflow-hidden"
           >
             <button
               onClick={() => setOpenIndex(isOpen ? null : index)}
-              className="w-full flex items-center justify-between px-5 py-4 text-left bg-white hover:bg-sand-100/50 transition-colors"
+              className="w-full flex items-center justify-between px-5 py-4 text-left bg-white hover:bg-stone-100/50 transition-colors"
             >
               <span className="font-semibold text-stone-900 pr-4 text-sm sm:text-base">
                 {item.question}
@@ -33,7 +33,7 @@ export function FAQ({ items }: { items: FAQItem[] }) {
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="2"
-                className={`flex-shrink-0 text-sand-500 transition-transform duration-200 ${
+                className={`flex-shrink-0 text-stone-400 transition-transform duration-200 ${
                   isOpen ? "rotate-45" : ""
                 }`}
               >

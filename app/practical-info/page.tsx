@@ -74,12 +74,12 @@ export default function PracticalInfoPage() {
             { season: "Autumn", months: "Sep–Nov", temp: "3–20°C", icon: "🍂", verdict: "Best Time" },
             { season: "Winter", months: "Dec–Feb", temp: "-15–0°C", icon: "❄️", verdict: "Quiet & Cold" },
           ].map((s) => (
-            <div key={s.season} className="p-4 rounded-xl border border-sand-200 bg-white text-center">
+            <div key={s.season} className="p-4 rounded-xl border border-stone-200 bg-white text-center">
               <span className="text-2xl">{s.icon}</span>
               <h3 className="mt-2 font-semibold text-stone-900 text-sm">{s.season}</h3>
-              <p className="text-xs text-sand-500 mt-1">{s.months}</p>
+              <p className="text-xs text-stone-400 mt-1">{s.months}</p>
               <p className="text-xs font-mono text-stone-700 mt-1">{s.temp}</p>
-              <p className="text-[10px] font-semibold uppercase text-jade mt-1">{s.verdict}</p>
+              <p className="text-[10px] font-semibold uppercase text-teal-600 mt-1">{s.verdict}</p>
             </div>
           ))}
         </div>
@@ -113,10 +113,10 @@ export default function PracticalInfoPage() {
               tip: "Save your hotel and key attractions before going out. Screenshot routes as backup.",
             },
           ].map((app) => (
-            <div key={app.name} className="p-5 rounded-xl border border-sand-200 bg-white">
+            <div key={app.name} className="p-5 rounded-xl border border-stone-200 bg-white">
               <h3 className="font-semibold text-stone-900">{app.name}</h3>
               <p className="text-sm text-stone-700 mt-1">{app.why}</p>
-              <p className="text-xs text-jade font-medium mt-2">💡 {app.tip}</p>
+              <p className="text-xs text-teal-600 font-medium mt-2">💡 {app.tip}</p>
             </div>
           ))}
         </div>
@@ -131,11 +131,11 @@ export default function PracticalInfoPage() {
           <p>China is nearly cashless. Mobile payment (Alipay / WeChat Pay) is used everywhere — from street food stalls to tourist attractions. Set up Alipay with your international card before arriving. Carry ¥200–500 cash as backup for the rare vendor who doesn&apos;t accept foreign-linked Alipay.</p>
         </InfoBox>
         <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-          <div className="p-4 rounded-lg border border-sand-200 bg-white">
+          <div className="p-4 rounded-lg border border-stone-200 bg-white">
             <h4 className="font-semibold text-stone-900">Currency</h4>
             <p className="text-stone-700 mt-1">Chinese Yuan (CNY / RMB / ¥). Roughly 1 USD ≈ 7.2 CNY (check current rates).</p>
           </div>
-          <div className="p-4 rounded-lg border border-sand-200 bg-white">
+          <div className="p-4 rounded-lg border border-stone-200 bg-white">
             <h4 className="font-semibold text-stone-900">ATMs</h4>
             <p className="text-stone-700 mt-1">Major bank ATMs (ICBC, Bank of China) accept international cards. Look for the Visa/Mastercard logo. Withdrawals have fees.</p>
           </div>

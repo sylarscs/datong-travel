@@ -72,7 +72,7 @@ export default async function GuidePage({ params }: Props) {
               {guide.frontmatter.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-sand-100 text-sand-500"
+                  className="px-2.5 py-0.5 rounded-full text-xs font-medium bg-stone-100 text-stone-400"
                 >
                   {tag}
                 </span>
@@ -85,7 +85,7 @@ export default async function GuidePage({ params }: Props) {
           <p className="text-lg text-stone-700 leading-relaxed mb-4 max-w-2xl">
             {guide.frontmatter.description}
           </p>
-          <div className="flex items-center gap-4 text-xs text-sand-500 font-mono">
+          <div className="flex items-center gap-4 text-xs text-stone-400 font-mono">
             <time dateTime={guide.frontmatter.publishedAt}>
               Updated{" "}
               {new Date(guide.frontmatter.updatedAt || guide.frontmatter.publishedAt).toLocaleDateString(
@@ -119,11 +119,11 @@ export default async function GuidePage({ params }: Props) {
 
         {/* Bottom CTA */}
         <div className="mt-12">
-          <CTABanner variant="sand" />
+          <CTABanner variant="stone" />
         </div>
 
         {/* Related Guides */}
-        <div className="mt-12 pt-8 border-t border-sand-200">
+        <div className="mt-12 pt-8 border-t border-stone-200">
           <h3 className="font-display font-bold text-lg text-stone-900 mb-4">
             More Datong Guides
           </h3>
@@ -145,12 +145,12 @@ async function RelatedGuides({ currentSlug }: { currentSlug: string }) {
         <Link
           key={g.slug}
           href={`/guides/${g.slug}`}
-          className="p-4 rounded-lg border border-sand-200 bg-white hover:shadow-sm transition-all group"
+          className="p-4 rounded-lg border border-stone-200 bg-white hover:shadow-sm transition-all group"
         >
-          <h4 className="font-semibold text-sm text-stone-900 group-hover:text-cinnabar transition-colors">
+          <h4 className="font-semibold text-sm text-stone-900 group-hover:text-red-600 transition-colors">
             {g.frontmatter.title}
           </h4>
-          <p className="text-xs text-sand-500 mt-1 line-clamp-2">
+          <p className="text-xs text-stone-400 mt-1 line-clamp-2">
             {g.frontmatter.description}
           </p>
         </Link>

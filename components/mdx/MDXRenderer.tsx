@@ -29,7 +29,7 @@ export const mdxComponents: MDXComponents = {
         href={href}
         target={isExternal ? "_blank" : undefined}
         rel={isExternal ? "noopener noreferrer" : undefined}
-        className="text-cinnabar hover:text-cinnabar-hover underline underline-offset-2 decoration-sand-300 hover:decoration-cinnabar transition-colors"
+        className="text-red-600 hover:text-red-700 underline underline-offset-2 decoration-stone-300 hover:decoration-red-600 transition-colors"
         {...props}
       >
         {children}
@@ -53,7 +53,7 @@ export const mdxComponents: MDXComponents = {
   ),
   blockquote: ({ children, ...props }) => (
     <blockquote
-      className="border-l-[3px] border-sand-300 pl-5 py-1 my-6 bg-sand-100 rounded-r-md italic text-stone-800"
+      className="border-l-[3px] border-stone-300 pl-5 py-1 my-6 bg-stone-100 rounded-r-md italic text-stone-800"
       {...props}
     >
       {children}

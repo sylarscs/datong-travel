@@ -29,7 +29,7 @@ export function Breadcrumb({ items }: { items: Crumb[] }) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <nav className="flex items-center gap-1.5 text-xs text-sand-500 mb-6 overflow-x-auto whitespace-nowrap">
+      <nav className="flex items-center gap-1.5 text-xs text-stone-400 mb-6 overflow-x-auto whitespace-nowrap">
         {items.map((item, index) => (
           <span key={index} className="flex items-center gap-1.5">
             {index > 0 && (
@@ -40,7 +40,7 @@ export function Breadcrumb({ items }: { items: Crumb[] }) {
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="1.5"
-                className="text-sand-300 flex-shrink-0"
+                className="text-stone-300 flex-shrink-0"
               >
                 <path d="M4.5 2.5L7.5 6L4.5 9.5" />
               </svg>
@@ -48,7 +48,7 @@ export function Breadcrumb({ items }: { items: Crumb[] }) {
             {item.href && index < items.length - 1 ? (
               <Link
                 href={item.href}
-                className="hover:text-cinnabar transition-colors"
+                className="hover:text-red-600 transition-colors"
               >
                 {item.label}
               </Link>

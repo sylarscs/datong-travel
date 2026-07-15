@@ -71,7 +71,7 @@ export default function RootLayout({
       lang="en"
       className={`${playfairDisplay.variable} ${sourceSans3.variable} ${jetbrainsMono.variable} h-full`}
     >
-      <body className="min-h-full flex flex-col bg-paper text-stone-700 font-body antialiased">
+      <body className="min-h-full flex flex-col bg-stone-50 text-stone-700 font-body antialiased">
         <GoogleAnalytics />
         <Header />
         <main className="flex-1">{children}</main>

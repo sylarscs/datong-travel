@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getFeaturedContent } from "@/lib/content";
 import { CTABanner } from "@/components/ui/CTABanner";
-import { TRIPCOM_LINKS, getAffiliateUrl } from "@/lib/affiliate";
+import { getAffiliateUrl } from "@/lib/affiliate";
 
 export default function HomePage() {
   const featuredGuides = getFeaturedContent("guides", 3);
@@ -10,11 +10,11 @@ export default function HomePage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative bg-sand-100 overflow-hidden">
+      <section className="relative bg-stone-100 overflow-hidden">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24 lg:py-32">
           <div className="max-w-3xl">
             {/* Eyebrow */}
-            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sand-500 mb-4">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-stone-400 mb-4">
               Your Complete English Guide to
             </p>
 
@@ -22,7 +22,7 @@ export default function HomePage() {
             <h1 className="font-display font-extrabold text-stone-900 leading-[1.1] mb-6">
               Datong.
               <br />
-              <span className="text-cinnabar">Ancient caves,</span>
+              <span className="text-red-600">Ancient caves,</span>
               <br />
               living history.
             </h1>
@@ -38,13 +38,13 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-3">
               <Link
                 href="/guides"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-md bg-cinnabar text-white font-semibold hover:bg-cinnabar-hover transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-md bg-red-600 text-white font-semibold hover:bg-red-700 transition-colors"
               >
                 Explore Guides →
               </Link>
               <Link
                 href="/itineraries"
-                className="inline-flex items-center justify-center px-6 py-3 rounded-md border border-sand-300 text-stone-900 font-semibold hover:bg-white transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-md border border-stone-300 text-stone-900 font-semibold hover:bg-white transition-colors"
               >
                 View Itineraries
               </Link>
@@ -89,7 +89,7 @@ export default function HomePage() {
           ].map((item) => (
             <div
               key={item.title}
-              className="p-6 rounded-xl border border-sand-200 bg-white hover:shadow-md transition-shadow"
+              className="p-6 rounded-xl border border-stone-200 bg-white hover:shadow-md transition-shadow"
             >
               <span className="text-2xl">{item.icon}</span>
               <h3 className="mt-3 font-semibold text-stone-900">{item.title}</h3>
@@ -102,18 +102,18 @@ export default function HomePage() {
       </section>
 
       {/* ── Featured Guides ── */}
-      <section className="bg-sand-100 py-16 sm:py-20">
+      <section className="bg-stone-100 py-16 sm:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="flex items-end justify-between mb-10">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.15em] text-sand-500 mb-2">
+              <p className="text-xs font-semibold uppercase tracking-[0.15em] text-stone-400 mb-2">
                 Start Planning
               </p>
               <h2 className="font-display font-bold">Travel Guides</h2>
             </div>
             <Link
               href="/guides"
-              className="hidden sm:inline-flex text-sm font-semibold text-cinnabar hover:text-cinnabar-hover transition-colors"
+              className="hidden sm:inline-flex text-sm font-semibold text-red-600 hover:text-red-700 transition-colors"
             >
               All Guides →
             </Link>
@@ -125,9 +125,9 @@ export default function HomePage() {
                 <Link
                   key={guide.slug}
                   href={`/guides/${guide.slug}`}
-                  className="group block rounded-xl overflow-hidden border border-sand-200 bg-white hover:shadow-lg transition-all duration-200"
+                  className="group block rounded-xl overflow-hidden border border-stone-200 bg-white hover:shadow-lg transition-all duration-200"
                 >
-                  <div className="aspect-[16/10] bg-gradient-to-br from-sand-200 to-sand-100 flex items-center justify-center">
+                  <div className="aspect-[16/10] bg-gradient-to-br from-stone-200 to-stone-100 flex items-center justify-center">
                     {guide.frontmatter.image ? (
                       <img
                         src={guide.frontmatter.image}
@@ -141,16 +141,16 @@ export default function HomePage() {
                     )}
                   </div>
                   <div className="p-5">
-                    <h3 className="font-display font-bold text-lg text-stone-900 group-hover:text-cinnabar transition-colors leading-tight">
+                    <h3 className="font-display font-bold text-lg text-stone-900 group-hover:text-red-600 transition-colors leading-tight">
                       {guide.frontmatter.title}
                     </h3>
-                    <p className="mt-2 text-sm text-sand-500 line-clamp-2 leading-relaxed">
+                    <p className="mt-2 text-sm text-stone-400 line-clamp-2 leading-relaxed">
                       {guide.frontmatter.description}
                     </p>
-                    <div className="mt-3 flex items-center gap-3 text-xs text-sand-500">
+                    <div className="mt-3 flex items-center gap-3 text-xs text-stone-400">
                       <span className="font-mono">{guide.readingTime} min read</span>
                       {guide.frontmatter.tags?.map((tag) => (
-                        <span key={tag} className="px-2 py-0.5 rounded-full bg-sand-100 text-sand-500">
+                        <span key={tag} className="px-2 py-0.5 rounded-full bg-stone-100 text-stone-400">
                           {tag}
                         </span>
                       ))}
@@ -160,14 +160,14 @@ export default function HomePage() {
               ))}
             </div>
           ) : (
-            <p className="text-center text-sand-500 py-12">
+            <p className="text-center text-stone-400 py-12">
               Guides coming soon! We&apos;re writing the most detailed Datong guides on the internet.
             </p>
           )}
 
           <Link
             href="/guides"
-            className="sm:hidden mt-6 block text-center text-sm font-semibold text-cinnabar"
+            className="sm:hidden mt-6 block text-center text-sm font-semibold text-red-600"
           >
             All Guides →
           </Link>
@@ -190,10 +190,10 @@ export default function HomePage() {
             <Link
               key={item.name}
               href={item.href}
-              className="flex flex-col items-center gap-2 p-4 rounded-xl border border-sand-200 bg-white hover:border-cinnabar/20 hover:shadow-sm transition-all group"
+              className="flex flex-col items-center gap-2 p-4 rounded-xl border border-stone-200 bg-white hover:border-red-600/20 hover:shadow-sm transition-all group"
             >
               <span className="text-2xl">{item.icon}</span>
-              <span className="text-xs font-semibold text-stone-900 group-hover:text-cinnabar transition-colors text-center">
+              <span className="text-xs font-semibold text-stone-900 group-hover:text-red-600 transition-colors text-center">
                 {item.name}
               </span>
             </Link>
@@ -202,12 +202,12 @@ export default function HomePage() {
       </section>
 
       {/* ── Hotel Booking CTA ── */}
-      <section className="bg-sand-100 py-16 sm:py-20">
+      <section className="bg-stone-100 py-16 sm:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="rounded-2xl bg-white border border-sand-200 p-8 sm:p-10">
+          <div className="rounded-2xl bg-white border border-stone-200 p-8 sm:p-10">
             <div className="flex flex-col lg:flex-row items-center gap-8">
               <div className="flex-1 text-center lg:text-left">
-                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-sand-500 mb-2">
+                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-stone-400 mb-2">
                   Where to Stay
                 </p>
                 <h2 className="font-display font-bold mb-3">
@@ -219,10 +219,10 @@ export default function HomePage() {
                   your Datong adventure.
                 </p>
                 <a
-                  href={getAffiliateUrl(TRIPCOM_LINKS.datongHotels, "datong_homepage_hotels")}
+                  href={getAffiliateUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-5 py-3 rounded-md bg-cinnabar text-white font-semibold hover:bg-cinnabar-hover transition-colors"
+                  className="inline-flex items-center px-5 py-3 rounded-md bg-red-600 text-white font-semibold hover:bg-red-700 transition-colors"
                 >
                   Browse Hotels on Trip.com →
                 </a>
@@ -231,7 +231,7 @@ export default function HomePage() {
                 {["🏨", "🏡", "🛏️", "🏰"].map((icon, i) => (
                   <div
                     key={i}
-                    className="w-16 h-16 rounded-xl bg-sand-100 flex items-center justify-center text-2xl"
+                    className="w-16 h-16 rounded-xl bg-stone-100 flex items-center justify-center text-2xl"
                   >
                     {icon}
                   </div>
@@ -248,14 +248,14 @@ export default function HomePage() {
           title="Get the Free Datong Travel Checklist"
           description="Packing list, essential Chinese phrases, must-see attractions ranked by priority, QR codes for Alipay & Didi setup — everything first-time visitors need, in a single PDF."
           buttonText="Send Me the Checklist"
-          variant="jade"
+          variant="teal"
         />
       </section>
 
       {/* ── About Note ── */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 pb-16">
         <div className="text-center max-w-lg mx-auto">
-          <p className="text-xs font-semibold uppercase tracking-[0.15em] text-sand-500 mb-3">
+          <p className="text-xs font-semibold uppercase tracking-[0.15em] text-stone-400 mb-3">
             About This Site
           </p>
           <p className="text-sm text-stone-700 leading-relaxed">
@@ -263,7 +263,7 @@ export default function HomePage() {
             English-language guides. Every recommendation is independently researched.
             Some links are affiliate links — we earn a small commission at no cost to you,
             which helps keep this site running.{" "}
-            <Link href="/about" className="text-cinnabar font-medium hover:text-cinnabar-hover">
+            <Link href="/about" className="text-red-600 font-medium hover:text-red-700">
               Learn more →
             </Link>
           </p>

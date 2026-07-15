@@ -3,7 +3,7 @@ import { Breadcrumb } from "@/components/content/Breadcrumb";
 import { InfoBox } from "@/components/ui/InfoBox";
 import { AffiliateCard } from "@/components/affiliate/AffiliateCard";
 import { trainRoutes } from "@/lib/data";
-import { getAffiliateUrl, TRIPCOM_LINKS } from "@/lib/affiliate";
+import { getAffiliateUrl } from "@/lib/affiliate";
 
 export const metadata = {
   title: "How to Get to Datong — Trains, Flights & Buses",
@@ -101,7 +101,7 @@ export default function TransportationPage() {
           ].map((item) => (
             <div
               key={item.title}
-              className="p-5 rounded-xl border border-sand-200 bg-white"
+              className="p-5 rounded-xl border border-stone-200 bg-white"
             >
               <h3 className="font-semibold text-stone-900 mb-2">{item.title}</h3>
               <p className="text-sm text-stone-700 leading-relaxed">{item.detail}</p>
@@ -111,7 +111,7 @@ export default function TransportationPage() {
       </section>
 
       {/* Book Train CTA */}
-      <div className="rounded-xl bg-sand-100 border border-sand-200 p-6 text-center">
+      <div className="rounded-xl bg-stone-100 border border-stone-200 p-6 text-center">
         <h3 className="font-display font-bold text-lg text-stone-900 mb-2">
           Ready to Book?
         </h3>
@@ -120,10 +120,10 @@ export default function TransportationPage() {
           international payment accepted.
         </p>
         <a
-          href={getAffiliateUrl(TRIPCOM_LINKS.chinaTrains, "datong_transport_page")}
+          href={getAffiliateUrl()}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex px-5 py-2.5 rounded-md bg-cinnabar text-white text-sm font-semibold hover:bg-cinnabar-hover transition-colors"
+          className="inline-flex px-5 py-2.5 rounded-md bg-red-600 text-white text-sm font-semibold hover:bg-red-700 transition-colors"
         >
           Search Train Tickets →
         </a>
