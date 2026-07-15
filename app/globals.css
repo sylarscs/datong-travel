@@ -21,7 +21,6 @@ body {
 
 h1, h2, h3, h4 {
   font-family: var(--font-display, "Playfair Display", "Georgia", serif);
-  color: #1c1917;
   line-height: 1.2;
   font-weight: 700;
 }
@@ -40,6 +39,10 @@ p { line-height: 1.75; margin-bottom: 1.25rem; }
   text-decoration-color: #d6d3d1;
 }
 .article-content a:hover { color: #991b1b; text-decoration-color: #b91c1c; }
+
+.article-content h1, .article-content h2, .article-content h3, .article-content h4 {
+  color: #1c1917;
+}
 
 .article-content h2 {
   margin-top: 3rem;
