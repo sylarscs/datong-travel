@@ -249,7 +249,7 @@ export default function HomePage() {
           {/* Queue Warning */}
           <div className="mb-8 px-4 py-3 rounded-lg bg-amber-50 border border-amber-200 text-center text-sm text-amber-800 font-semibold">
             🕐 These restaurants are wildly popular — expect 1–3 hour waits during peak season.
-            Arrive 30 min before opening, or check queue progress on Dianping / Meituan before heading over.
+            Arrive 30 min early, or check Dianping / Meituan for live queue status.
           </div>
 
           {/* Restaurant Cards */}
@@ -278,7 +278,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-3 text-xs text-stone-400">
                   <span className="font-mono">💰 ~¥60/person</span>
-                  <span>📍 Inside Ancient City (古城内)</span>
+                  <span className="font-mono text-xs text-stone-400">📍 平城区和阳门内街新和坊3-1号（东南邑·太平楼东200米）</span>
                 </div>
               </div>
               <div className="px-6 py-3 bg-stone-50 border-t border-stone-100">
@@ -300,9 +300,10 @@ export default function HomePage() {
                 <p className="text-xs font-semibold text-stone-400 uppercase tracking-wider mb-3">喜晋道</p>
                 <p className="text-sm text-stone-600 leading-relaxed mb-3">
                   The <strong className="text-stone-900">"Hermès of knife-cut noodles"</strong> —
-                  Datong&apos;s most famous bowl of daoxiaomian (刀削面). Each ¥19 bowl comes
-                  with a braised egg and tofu. The chili oil is house-made and worth
-                  buying a jar.
+                  Datong&apos;s most famous bowl of daoxiaomian. The signature roumo mian
+                  (肉沫刀削面) is <strong className="text-stone-900">hand-pulled noodles topped with meat sauce</strong>,
+                  served with a braised egg and tofu — all for ¥19. The chili oil is house-made
+                  and worth buying a jar.
                 </p>
                 <div className="mb-3">
                   <p className="text-xs font-semibold text-stone-500 uppercase tracking-wider mb-1.5">Signature Dishes</p>
@@ -314,7 +315,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-3 text-xs text-stone-400">
                   <span className="font-mono">💰 ~¥40/person</span>
-                  <span>📍 Huayan Temple area (华严寺旁)</span>
+                  <span className="font-mono text-xs text-stone-400">📍 平城区清远街古城B区1号（华严寺广场·钟楼南侧）</span>
                 </div>
               </div>
               <div className="px-6 py-3 bg-stone-50 border-t border-stone-100">
@@ -338,8 +339,10 @@ export default function HomePage() {
                 <p className="text-sm text-stone-600 leading-relaxed mb-3">
                   A 500-year-old restaurant that spent <strong className="text-stone-900">¥370 million</strong> on
                   its interior. Empress Dowager Cixi ate here. The{" "}
-                  <strong className="text-stone-900">same group owns Xijindao</strong>, so
-                  you can order their famous knife-cut noodles here — same kitchen, no queue.
+                  <strong className="text-stone-900">same group owns Xijindao</strong> —
+                  two birds, one stone: you get the full Fenglinge experience AND their
+                  famous knife-cut noodles from the same kitchen. (Still expect a queue,
+                  but at least it moves — unlike Xijindao&apos;s limited daily numbers.)
                 </p>
                 <div className="mb-3">
                   <p className="text-xs font-semibold text-stone-500 uppercase tracking-wider mb-1.5">Signature Dishes</p>
@@ -351,7 +354,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-3 text-xs text-stone-400">
                   <span className="font-mono">💰 ~¥100/person</span>
-                  <span>📍 Inside Ancient City (古城内)</span>
+                  <span className="font-mono text-xs text-stone-400">📍 平城区鼓楼西街51号（华严寺东侧）</span>
                 </div>
               </div>
               <div className="px-6 py-3 bg-stone-50 border-t border-stone-100">
@@ -388,7 +391,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-3 text-xs text-stone-400">
                   <span className="font-mono">💰 ~¥60/person</span>
-                  <span>📍 Drum Tower, Ancient City (鼓楼旁)</span>
+                  <span className="font-mono text-xs text-stone-400">📍 平城区鼓楼西街43号（鼓楼西北角）</span>
                 </div>
               </div>
               <div className="px-6 py-3 bg-stone-50 border-t border-stone-100">
@@ -424,7 +427,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-3 text-xs text-stone-400">
                   <span className="font-mono">💰 ~¥15/person</span>
-                  <span>📍 Ancient City (古城内)</span>
+                  <span className="font-mono text-xs text-stone-400">📍 平城区教场街福华园4号厅（古城西门附近）</span>
                 </div>
               </div>
               <div className="px-6 py-3 bg-stone-50 border-t border-stone-100">
@@ -462,7 +465,7 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-3 text-xs text-stone-400">
                   <span className="font-mono">💰 ~¥45/person</span>
-                  <span>📍 Yongtai South Road (永泰南路)</span>
+                  <span className="font-mono text-xs text-stone-400">📍 平城区永泰南路268号（红星美凯龙北侧）</span>
                 </div>
               </div>
               <div className="px-6 py-3 bg-stone-50 border-t border-stone-100">
