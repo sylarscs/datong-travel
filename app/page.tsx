@@ -165,47 +165,18 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Audio Guide Promo ── */}
-      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
-        <Link
-          href="/premium"
-          className="block rounded-xl bg-stone-900 p-6 sm:p-8 hover:bg-stone-800 transition-colors group"
-        >
-          <div className="flex flex-col sm:flex-row items-center gap-6">
-            <div className="flex-shrink-0 w-16 h-16 rounded-full bg-red-800 flex items-center justify-center text-2xl">
-              🎧
-            </div>
-            <div className="flex-1 text-center sm:text-left">
-              <p className="text-xs font-semibold uppercase tracking-wider text-stone-400 mb-1">
-                New — Premium Audio Guides
-              </p>
-              <h3 className="font-display font-bold text-xl text-white mb-2">
-                Yungang Grottoes &amp; Hanging Temple
-              </h3>
-              <p className="text-sm text-stone-300 max-w-lg">
-                In-depth English narration — cave by cave, hall by hall. Like a
-                documentary, not a textbook. Free preview available.
-              </p>
-            </div>
-            <span className="flex-shrink-0 px-5 py-3 rounded-md bg-white text-stone-900 font-semibold text-sm group-hover:bg-stone-100 transition-colors">
-              Listen Free →
-            </span>
-          </div>
-        </Link>
-      </section>
-
-      {/* ── Quick Links ── */}
+      {/* ── Top Attractions ── */}
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20">
         <h2 className="font-display font-bold text-center mb-10">
           Top Attractions
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
           {[
-            { name: "Yungang Grottoes", icon: "🏛️", href: "/guides/yungang-grottoes" },
-            { name: "Hanging Temple", icon: "🏯", href: "/guides/hanging-temple" },
-            { name: "Huayan Temple", icon: "🛕", href: "/attractions/huayan-temple" },
-            { name: "City Wall", icon: "🧱", href: "/attractions/datong-city-wall" },
-            { name: "Nine Dragon Screen", icon: "🐉", href: "/attractions/nine-dragon-screen" },
+            { name: "Yungang Grottoes", icon: "🏛️", href: "/premium/yungang" },
+            { name: "Hanging Temple", icon: "🏯", href: "/premium/xuankong" },
+            { name: "Huayan Temple", icon: "🛕", href: "/premium/huayan" },
+            { name: "Yingxian Pagoda", icon: "🗼", href: "/premium/yingxian" },
+            { name: "Ancient City", icon: "🏰", href: "/premium/ancient-city" },
           ].map((item) => (
             <div
               key={item.name}
@@ -220,16 +191,40 @@ export default function HomePage() {
                   {item.name}
                 </span>
               </Link>
-              <a
-                href={getAffiliateUrl()}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href={item.href}
                 className="block text-center py-2 text-[10px] font-semibold text-red-800 hover:bg-red-50 transition-colors border-t border-stone-100"
               >
-                Book Tickets →
-              </a>
+                Audio Guide →
+              </Link>
             </div>
           ))}
+        </div>
+
+        {/* Audio Guide Promo — connected to Top Attractions */}
+        <div className="mt-8">
+          <Link
+            href="/premium"
+            className="block rounded-xl bg-stone-900 p-5 sm:p-6 hover:bg-stone-800 transition-colors group"
+          >
+            <div className="flex flex-col sm:flex-row items-center gap-5">
+              <div className="flex-shrink-0 w-14 h-14 rounded-full bg-red-800 flex items-center justify-center text-2xl">
+                🎧
+              </div>
+              <div className="flex-1 text-center sm:text-left">
+                <p className="text-xs font-semibold uppercase tracking-wider text-stone-400 mb-1">
+                  Premium Audio Guides — All 5 Attractions
+                </p>
+                <p className="text-sm text-stone-300 max-w-lg">
+                  Every attraction above has a dedicated audio guide — documentary-style English
+                  narration, episode by episode. Like a podcast, not a textbook. Free previews available.
+                </p>
+              </div>
+              <span className="flex-shrink-0 px-5 py-3 rounded-md bg-white text-stone-900 font-semibold text-sm group-hover:bg-stone-100 transition-colors">
+                Browse All Guides →
+              </span>
+            </div>
+          </Link>
         </div>
       </section>
 
@@ -250,8 +245,8 @@ export default function HomePage() {
           </div>
 
           {/* Queue Warning */}
-          <div className="mb-8 py-3 px-4 rounded-lg bg-amber-50 border border-amber-200 text-center">
-            <p className="text-sm text-amber-800 font-semibold leading-relaxed">
+          <div className="mb-8 py-3 px-4 rounded-lg bg-amber-50 border border-amber-200 flex items-center justify-center">
+            <p className="text-sm text-amber-800 font-semibold m-0">
               🕐 These restaurants are wildly popular — expect 1–3 hour waits during peak season.
               Arrive 30 min before opening, or check queue progress on Dianping / Meituan before heading over.
             </p>
