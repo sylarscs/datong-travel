@@ -85,13 +85,17 @@ export default function PremiumPage() {
 
       {/* Bundle */}
       <section className="p-6 sm:p-8 rounded-xl bg-stone-900 text-white text-center mb-8">
-        <p className="text-xs font-semibold uppercase tracking-wider text-stone-400 mb-2">Best Value — 63折</p>
+        <p className="text-xs font-semibold uppercase tracking-wider text-stone-400 mb-2">Best Value</p>
         <h2 className="font-display font-bold text-2xl mb-2">Datong Complete Bundle</h2>
         <p className="text-stone-300 mb-4 max-w-md mx-auto text-sm">
           All 5 audio guides — Yungang Grottoes + Hanging Temple + Huayan Temple + Yingxian Wooden Pagoda + Datong Ancient City.
         </p>
+        <div className="flex items-baseline justify-center gap-2 mb-1">
+          <span className="text-xs text-stone-400 line-through">$31.95</span>
+          <span className="px-2 py-0.5 rounded bg-red-600 text-white text-xs font-bold">63折</span>
+        </div>
         <p className="font-display font-bold text-3xl mb-1">$19.99</p>
-        <p className="text-xs text-stone-400 mb-4 line-through">$31.95 separately</p>
+        <p className="text-xs text-amber-300 font-semibold mb-4">Save $11.96 — 37% off</p>
         <button className="px-6 py-3 rounded-md bg-white text-stone-900 font-semibold hover:bg-stone-100 transition-colors">
           Get the Bundle — $19.99
         </button>
