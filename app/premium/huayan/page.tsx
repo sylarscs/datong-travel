@@ -29,7 +29,7 @@ export default function HuayanPremiumPage() {
           5 episodes — China&apos;s largest Buddhist hall, a 1,000-year-old sutra library, and the best surviving monument of the Liao Dynasty.
         </p>
         <div className="flex flex-wrap gap-3 mt-3 text-xs font-mono text-stone-400">
-          <span>8 episodes</span><span>~30 minutes</span><span>$5.99</span>
+          <span>8 episodes</span><span>~30 minutes</span><span>$0.99</span>
         </div>
         <div className="mt-3 flex items-center gap-2 text-xs text-stone-500">
           <span>⭐ 4.9</span><span>·</span><span>Trusted by travelers from 18 countries</span>
@@ -66,13 +66,13 @@ export default function HuayanPremiumPage() {
       <section className="p-6 sm:p-8 rounded-xl bg-stone-900 text-white text-center mb-10">
         <h2 className="font-display font-bold text-2xl mb-2">Get All 5 Episodes</h2>
         <p className="text-stone-300 mb-2 text-sm">5 episodes · ~20 min · Listen offline</p>
-        <p className="font-display font-bold text-3xl mb-4">$5.99</p>
-        <button className="px-6 py-3 rounded-md bg-white text-stone-900 font-semibold hover:bg-stone-100 transition-colors">Buy Now — $5.99</button>
+        <p className="font-display font-bold text-3xl mb-4">$0.99</p>
+        <button className="px-6 py-3 rounded-md bg-white text-stone-900 font-semibold hover:bg-stone-100 transition-colors">Buy Now — $0.99</button>
         <p className="text-xs text-stone-400 mt-4">Payment coming soon.</p>
       </section>
 
       <InfoBox type="info" title="Bundle & Save">
-        Get <strong>all 5 guides</strong> for <strong>$14.99</strong> — includes Yungang, Hanging Temple, Huayan Temple, plus the Ancient City Walking Tour & Nine Dragon Screen as free bonuses.{" "}
+        Get <strong>all 5 guides</strong> for <strong>$9.99</strong> — includes Yungang, Hanging Temple, Huayan Temple, plus the Ancient City Walking Tour & Nine Dragon Screen as free bonuses.{" "}
         <a href="/premium" className="font-semibold text-red-800">View bundle →</a>
       </InfoBox>
     </div>

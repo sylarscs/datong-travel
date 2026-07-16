@@ -74,7 +74,7 @@ export default function XuankongPremiumPage() {
       </section>
 
       <InfoBox type="info" title="Bundle & Save">
-        All 5 guides — Yungang (15 eps) + Hanging Temple (12 eps) + Huayan Temple (5 eps) + Ancient City Tour (10 eps) + Nine Dragon Screen (2 eps) — <strong>$14.99</strong>.{" "}
+        All 5 guides — Yungang (15 eps) + Hanging Temple (12 eps) + Huayan Temple (5 eps) + Ancient City Tour (10 eps) + Nine Dragon Screen (2 eps) — <strong>$9.99</strong>.{" "}
         <a href="/premium" className="font-semibold text-red-800">View bundle →</a>
       </InfoBox>
     </div>

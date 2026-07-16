@@ -25,7 +25,7 @@ export default function YingxianPremiumPage() {
         <h1 className="font-display font-extrabold text-stone-900 text-3xl sm:text-4xl mb-3">Yingxian Wooden Pagoda</h1>
         <p className="text-lg text-stone-600 leading-relaxed max-w-2xl">6 episodes — 1,000 years of timber engineering, a vanished empire, and the world&apos;s oldest wooden skyscraper.</p>
         <div className="flex flex-wrap gap-3 mt-3 text-xs font-mono text-stone-400">
-          <span>6 episodes</span><span>~20 minutes</span><span>$4.99</span>
+          <span>6 episodes</span><span>~20 minutes</span><span>$0.99</span>
         </div>
         <div className="mt-3 flex items-center gap-2 text-xs text-stone-500">
           <span>⭐ 4.9</span><span>·</span><span>Trusted by travelers from 18 countries</span>
@@ -62,12 +62,12 @@ export default function YingxianPremiumPage() {
       <section className="p-6 sm:p-8 rounded-xl bg-stone-900 text-white text-center mb-10">
         <h2 className="font-display font-bold text-2xl mb-2">Get All 6 Episodes</h2>
         <p className="text-stone-300 mb-2 text-sm">6 episodes · ~20 min · Lifetime access</p>
-        <p className="font-display font-bold text-3xl mb-4">$4.99</p>
-        <button className="px-6 py-3 rounded-md bg-white text-stone-900 font-semibold hover:bg-stone-100 transition-colors">Buy Now — $4.99</button>
+        <p className="font-display font-bold text-3xl mb-4">$0.99</p>
+        <button className="px-6 py-3 rounded-md bg-white text-stone-900 font-semibold hover:bg-stone-100 transition-colors">Buy Now — $0.99</button>
       </section>
 
       <InfoBox type="info" title="Bundle & Save">
-        All 5 guides for <strong>$19.99</strong> — save 30%.{" "}
+        All 5 guides for <strong>$9.99</strong> — save 30%.{" "}
         <a href="/premium" className="font-semibold text-red-800">View bundle →</a>
       </InfoBox>
     </div>

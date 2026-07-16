@@ -3,7 +3,7 @@ import { Breadcrumb } from "@/components/content/Breadcrumb";
 
 export const metadata = {
   title: "Audio Guides — 5 English Guides for Datong's Best Sites",
-  description: "Premium English audio guides for Yungang Grottoes, Hanging Temple, Huayan Temple, Yingxian Wooden Pagoda, and Datong Ancient City. Bundle all 5 for $19.99.",
+  description: "Premium English audio guides for Yungang Grottoes, Hanging Temple, Huayan Temple, Yingxian Wooden Pagoda, and Datong Ancient City. Bundle all 5 for $9.99.",
 };
 
 const GUIDES = [
@@ -19,17 +19,17 @@ const GUIDES = [
   },
   {
     id: "huayan", title: "Huayan Temple", subtitle: "8 Episodes · ~30 min",
-    price: "$5.99", image: "",
+    price: "$0.99", image: "",
     desc: "China's largest Buddhist hall. A 1,000-year-old sutra library. The Khitan empire's greatest surviving monument — and its quiet gardens.",
   },
   {
     id: "yingxian", title: "Yingxian Wooden Pagoda", subtitle: "6 Episodes · ~20 min",
-    price: "$4.99", image: "",
+    price: "$0.99", image: "",
     desc: "The world's oldest wooden pagoda. 67 meters, zero nails, 40+ earthquakes survived. A day trip into Liao Dynasty engineering — and real Shanxi.",
   },
   {
     id: "ancient-city", title: "Datong Ancient City", subtitle: "12 Episodes · ~45 min",
-    price: "$4.99", image: "",
+    price: "$0.99", image: "",
     desc: "A full-day walking tour: 12 attractions across 3.28 sq km — temples, mosques, churches, markets, and the city wall at sunset. Also free with any purchase above.",
     bonus: true,
   },
@@ -78,7 +78,7 @@ export default function PremiumPage() {
                   <Link href={`/premium/${g.id}`} className="inline-block px-4 py-2 rounded-md bg-red-800 text-white text-sm font-semibold hover:bg-red-900 transition-colors">
                     View Episodes →
                   </Link>
-                  {(g as any).bonus && <span className="text-xs text-stone-400">Or buy separately — $4.99</span>}
+                  {(g as any).bonus && <span className="text-xs text-stone-400">Or buy separately — $0.99</span>}
                 </div>
               </div>
             </div>
@@ -94,10 +94,10 @@ export default function PremiumPage() {
           All 4 premium guides — Yungang Grottoes + Hanging Temple + Huayan Temple + Yingxian Wooden Pagoda.
         </p>
         <p className="text-lg text-amber-300 font-semibold mb-4">+ Datong Ancient City (12 episodes · 45 min) — FREE</p>
-        <p className="font-display font-bold text-3xl mb-1">$19.99</p>
-        <p className="text-xs text-stone-400 mb-4 line-through">$28.95 separately</p>
+        <p className="font-display font-bold text-3xl mb-1">$9.99</p>
+        <p className="text-xs text-stone-400 mb-4 line-through">$16.95 separately</p>
         <button className="px-6 py-3 rounded-md bg-white text-stone-900 font-semibold hover:bg-stone-100 transition-colors">
-          Get the Bundle — $19.99
+          Get the Bundle — $9.99
         </button>
       </section>
 
