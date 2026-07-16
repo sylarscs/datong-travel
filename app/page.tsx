@@ -172,18 +172,18 @@ export default function HomePage() {
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
           {[
-            { name: "Yungang Grottoes", icon: "🏛️", href: "/premium/yungang" },
-            { name: "Hanging Temple", icon: "🏯", href: "/premium/xuankong" },
-            { name: "Huayan Temple", icon: "🛕", href: "/premium/huayan" },
-            { name: "Yingxian Pagoda", icon: "🗼", href: "/premium/yingxian" },
-            { name: "Ancient City", icon: "🏰", href: "/premium/ancient-city" },
+            { name: "Yungang Grottoes", icon: "🏛️", guide: "/guides/yungang-grottoes", premium: "/premium/yungang" },
+            { name: "Hanging Temple", icon: "🏯", guide: "/guides/hanging-temple", premium: "/premium/xuankong" },
+            { name: "Huayan Temple", icon: "🛕", guide: "/attractions/huayan-temple", premium: "/premium/huayan" },
+            { name: "Yingxian Pagoda", icon: "🗼", guide: "/attractions/yingxian-wooden-pagoda", premium: "/premium/yingxian" },
+            { name: "Ancient City", icon: "🏰", guide: "/attractions/datong-ancient-city", premium: "/premium/ancient-city" },
           ].map((item) => (
             <div
               key={item.name}
               className="flex flex-col rounded-xl border border-stone-200 bg-white hover:shadow-sm transition-all group overflow-hidden"
             >
               <Link
-                href={item.href}
+                href={item.guide}
                 className="flex flex-col items-center gap-2 p-4 pb-2"
               >
                 <span className="text-2xl">{item.icon}</span>
@@ -192,7 +192,7 @@ export default function HomePage() {
                 </span>
               </Link>
               <Link
-                href={item.href}
+                href={item.premium}
                 className="block text-center py-2 text-[10px] font-semibold text-red-800 hover:bg-red-50 transition-colors border-t border-stone-100"
               >
                 Audio Guide →
@@ -216,8 +216,10 @@ export default function HomePage() {
                   Premium Audio Guides — All 5 Attractions
                 </p>
                 <p className="text-sm text-stone-300 max-w-lg">
-                  Every attraction above has a dedicated audio guide — documentary-style English
-                  narration, episode by episode. Like a podcast, not a textbook. Free previews available.
+                  <strong className="text-white">53 episodes · 3.5 hours of narration.</strong>{" "}
+                  Every attraction above has a dedicated audio guide — documentary-style English,
+                  episode by episode. Cave by cave, hall by hall, street by street. Like a podcast,
+                  not a textbook. Free previews on every guide.
                 </p>
               </div>
               <span className="flex-shrink-0 px-5 py-3 rounded-md bg-white text-stone-900 font-semibold text-sm group-hover:bg-stone-100 transition-colors">
