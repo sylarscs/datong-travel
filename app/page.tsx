@@ -233,6 +233,142 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Local Restaurant Guide ── */}
+      <section className="py-16 sm:py-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10">
+            <p className="text-xs font-semibold uppercase tracking-[0.15em] text-stone-400 mb-2">
+              Eat Like a Local
+            </p>
+            <h2 className="font-display font-bold">Datong Restaurant Guide</h2>
+            <p className="mt-3 text-sm text-stone-500 max-w-xl mx-auto leading-relaxed">
+              Handpicked from{" "}
+              <strong className="text-stone-700">Dianping (大众点评)</strong> and{" "}
+              <strong className="text-stone-700">Xiaohongshu (小红书)</strong> —{" "}
+              these are where real Datong locals line up, not where tour buses drop off.
+            </p>
+          </div>
+
+          {/* Queue Warning */}
+          <div className="mb-8 p-4 rounded-lg bg-amber-50 border border-amber-200 text-center">
+            <p className="text-sm text-amber-800 font-semibold">
+              🕐 All three restaurants are extremely popular — expect 1–3 hour waits during peak season.
+              <span className="font-normal"> Arrive 30 min before opening or grab a number on Dianping ahead of time.</span>
+            </p>
+          </div>
+
+          {/* Restaurant Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* 凯鸽酒楼 */}
+            <div className="rounded-xl border border-stone-200 bg-white overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+              <div className="p-6 flex-1">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="w-8 h-8 rounded-lg bg-red-100 text-red-800 flex items-center justify-center text-sm font-bold">1</span>
+                  <h3 className="font-display font-bold text-lg text-stone-900">Kaige Restaurant</h3>
+                </div>
+                <p className="text-xs font-semibold text-stone-400 uppercase tracking-wider mb-3">凯鸽酒楼</p>
+                <p className="text-sm text-stone-600 leading-relaxed mb-3">
+                  The most-loved local restaurant in Datong. Known for its{" "}
+                  <strong className="text-stone-900">half-portion system</strong> — order
+                  smaller plates at half price, so two people can try 6–8 dishes. The
+                  complimentary eight-treasure congee (八宝粥) is legendary.
+                </p>
+                <div className="mb-3">
+                  <p className="text-xs font-semibold text-stone-500 uppercase tracking-wider mb-1.5">Signature Dishes</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {["Fengsha Chicken (风沙鸡)", "Shanxi Guoyourou (过油肉)", "Copper Hotpot (什锦锅)", "Millet Cake (黄米凉糕)", "Sea Buckthorn Juice (沙棘汁)"].map((d) => (
+                      <span key={d} className="px-2 py-0.5 rounded-md bg-stone-100 text-xs text-stone-600 font-medium">{d}</span>
+                    ))}
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 text-xs text-stone-400">
+                  <span className="font-mono">💰 ~¥60/person</span>
+                  <span>📍 Zhenxing Street (振兴街)</span>
+                </div>
+              </div>
+              <div className="px-6 py-3 bg-stone-50 border-t border-stone-100">
+                <p className="text-xs text-stone-500">
+                  <strong className="text-amber-700">💡 Tip:</strong> Scan the QR code on Dianping
+                  to join the virtual queue before you leave your hotel.
+                </p>
+              </div>
+            </div>
+
+            {/* 喜晋道 */}
+            <div className="rounded-xl border border-stone-200 bg-white overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+              <div className="p-6 flex-1">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="w-8 h-8 rounded-lg bg-red-100 text-red-800 flex items-center justify-center text-sm font-bold">2</span>
+                  <h3 className="font-display font-bold text-lg text-stone-900">Xijindao</h3>
+                </div>
+                <p className="text-xs font-semibold text-stone-400 uppercase tracking-wider mb-3">喜晋道</p>
+                <p className="text-sm text-stone-600 leading-relaxed mb-3">
+                  The <strong className="text-stone-900">"Hermès of knife-cut noodles"</strong> —
+                  Datong&apos;s most famous bowl of daoxiaomian (刀削面). Each ¥19 bowl comes
+                  with a braised egg and tofu. The chili oil is house-made and worth
+                  buying a jar.
+                </p>
+                <div className="mb-3">
+                  <p className="text-xs font-semibold text-stone-500 uppercase tracking-wider mb-1.5">Signature Dishes</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {["Meat Sauce Noodles (肉沫面)", "Braised Pork Strip (扒肉条)", "Braised Beef (酱牛肉)", "Lamb Skewers (羊肉串)", "Milk Skin Yogurt (奶皮子)"].map((d) => (
+                      <span key={d} className="px-2 py-0.5 rounded-md bg-stone-100 text-xs text-stone-600 font-medium">{d}</span>
+                    ))}
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 text-xs text-stone-400">
+                  <span className="font-mono">💰 ~¥40/person</span>
+                  <span>📍 Huayan Temple area (华严寺旁)</span>
+                </div>
+              </div>
+              <div className="px-6 py-3 bg-stone-50 border-t border-stone-100">
+                <p className="text-xs text-stone-500">
+                  <strong className="text-red-700">⚠️ Longest queue in Datong:</strong> 185+
+                  tables on weekends. Scalpers sell queue numbers outside for ~¥30 — skip
+                  them and use the &quot;美味不用等&quot; WeChat mini program instead.
+                </p>
+              </div>
+            </div>
+
+            {/* 凤临阁 */}
+            <div className="rounded-xl border border-stone-200 bg-white overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+              <div className="p-6 flex-1">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="w-8 h-8 rounded-lg bg-red-100 text-red-800 flex items-center justify-center text-sm font-bold">3</span>
+                  <h3 className="font-display font-bold text-lg text-stone-900">Fenglinge</h3>
+                </div>
+                <p className="text-xs font-semibold text-stone-400 uppercase tracking-wider mb-3">凤临阁</p>
+                <p className="text-sm text-stone-600 leading-relaxed mb-3">
+                  A 500-year-old restaurant that spent <strong className="text-stone-900">¥370 million</strong> on
+                  its interior. Empress Dowager Cixi ate here. The{" "}
+                  <strong className="text-stone-900">same group owns Xijindao</strong>, so
+                  you can order their famous knife-cut noodles here — same kitchen, no queue.
+                </p>
+                <div className="mb-3">
+                  <p className="text-xs font-semibold text-stone-500 uppercase tracking-wider mb-1.5">Signature Dishes</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {["Hundred-Flower Shaomai (百花烧麦)", "Guoyourou (过油肉)", "Yellow-Braised Meatballs (黄焖丸子)", "Copper Hotpot (什锦火锅)", "Xijindao Noodles (刀削面)"].map((d) => (
+                      <span key={d} className="px-2 py-0.5 rounded-md bg-stone-100 text-xs text-stone-600 font-medium">{d}</span>
+                    ))}
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 text-xs text-stone-400">
+                  <span className="font-mono">💰 ~¥100/person</span>
+                  <span>📍 Inside Ancient City (古城内)</span>
+                </div>
+              </div>
+              <div className="px-6 py-3 bg-stone-50 border-t border-stone-100">
+                <p className="text-xs text-stone-500">
+                  <strong className="text-amber-700">💡 Tip:</strong> Morning queue opens at
+                  9am for lunch, 3:30pm for dinner. Grab your number early — or go to the
+                  Yujinyuan (御锦园) branch which is less crowded.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Hotel Booking CTA ── */}
       <section className="bg-stone-100 py-16 sm:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
