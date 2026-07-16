@@ -252,8 +252,8 @@ export default function HomePage() {
           {/* Queue Warning */}
           <div className="mb-8 p-4 rounded-lg bg-amber-50 border border-amber-200 text-center">
             <p className="text-sm text-amber-800 font-semibold">
-              🕐 All three restaurants are extremely popular — expect 1–3 hour waits during peak season.
-              <span className="font-normal"> Arrive 30 min before opening or grab a number on Dianping ahead of time.</span>
+              🕐 These restaurants are wildly popular — expect 1–3 hour waits during peak season.
+              <span className="font-normal"> Arrive 30 min before opening. Note: during busy months, Dianping only shows queue progress — you cannot grab a number online.</span>
             </p>
           </div>
 
@@ -271,7 +271,7 @@ export default function HomePage() {
                   The most-loved local restaurant in Datong. Known for its{" "}
                   <strong className="text-stone-900">half-portion system</strong> — order
                   smaller plates at half price, so two people can try 6–8 dishes. The
-                  complimentary eight-treasure congee (八宝粥) is legendary.
+                  freshly-squeezed sea buckthorn juice (沙棘汁) is a must-order.
                 </p>
                 <div className="mb-3">
                   <p className="text-xs font-semibold text-stone-500 uppercase tracking-wider mb-1.5">Signature Dishes</p>
@@ -283,13 +283,14 @@ export default function HomePage() {
                 </div>
                 <div className="flex items-center gap-3 text-xs text-stone-400">
                   <span className="font-mono">💰 ~¥60/person</span>
-                  <span>📍 Zhenxing Street (振兴街)</span>
+                  <span>📍 Inside Ancient City (古城内)</span>
                 </div>
               </div>
               <div className="px-6 py-3 bg-stone-50 border-t border-stone-100">
                 <p className="text-xs text-stone-500">
-                  <strong className="text-amber-700">💡 Tip:</strong> Scan the QR code on Dianping
-                  to join the virtual queue before you leave your hotel.
+                  <strong className="text-amber-700">💡 Tip:</strong> The Ancient City branch
+                  is the most convenient. During peak season, check queue progress on Dianping
+                  before heading over — but you&apos;ll need to pick up a number in person.
                 </p>
               </div>
             </div>
@@ -323,9 +324,10 @@ export default function HomePage() {
               </div>
               <div className="px-6 py-3 bg-stone-50 border-t border-stone-100">
                 <p className="text-xs text-stone-500">
-                  <strong className="text-red-700">⚠️ Longest queue in Datong:</strong> 185+
-                  tables on weekends. Scalpers sell queue numbers outside for ~¥30 — skip
-                  them and use the &quot;美味不用等&quot; WeChat mini program instead.
+                  <strong className="text-red-700">⚠️ Limited daily numbers:</strong> Once
+                  they&apos;re out, queuing won&apos;t help. Scalpers at the entrance sell
+                  queue tickets for <strong>~¥30</strong> — it&apos;s worth every yuan to skip
+                  a 2-hour wait. Just pay and walk in.
                 </p>
               </div>
             </div>
@@ -359,9 +361,83 @@ export default function HomePage() {
               </div>
               <div className="px-6 py-3 bg-stone-50 border-t border-stone-100">
                 <p className="text-xs text-stone-500">
-                  <strong className="text-amber-700">💡 Tip:</strong> Morning queue opens at
-                  9am for lunch, 3:30pm for dinner. Grab your number early — or go to the
-                  Yujinyuan (御锦园) branch which is less crowded.
+                  <strong className="text-amber-700">💡 Tip:</strong> Morning numbers drop at
+                  9am for lunch, 3:30pm for dinner. Or go to the Yujinyuan (御锦园) branch —
+                  same kitchen, less crowded, and you can still order Xijindao noodles.
+                </p>
+              </div>
+            </div>
+
+            {/* 龙聚祥烧卖馆 */}
+            <div className="rounded-xl border border-stone-200 bg-white overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+              <div className="p-6 flex-1">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="w-8 h-8 rounded-lg bg-red-100 text-red-800 flex items-center justify-center text-sm font-bold">4</span>
+                  <h3 className="font-display font-bold text-lg text-stone-900">Longjuxiang</h3>
+                </div>
+                <p className="text-xs font-semibold text-stone-400 uppercase tracking-wider mb-3">龙聚祥烧卖馆</p>
+                <p className="text-sm text-stone-600 leading-relaxed mb-3">
+                  Right next to the Drum Tower in the Ancient City —{" "}
+                  <strong className="text-stone-900">Datong&apos;s best shaomai</strong>.
+                  Paper-thin wrappers, rich fillings, and a vinegar-based dipping sauce
+                  that makes every bite sing. The lamb shaomai and milk-skin yogurt are
+                  unforgettable.
+                </p>
+                <div className="mb-3">
+                  <p className="text-xs font-semibold text-stone-500 uppercase tracking-wider mb-1.5">Signature Dishes</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {["Lamb Shaomai (羊肉烧卖)", "Guoyourou (过油肉)", "Sweet & Sour Pork (糖醋里脊)", "Royal Braised Chicken (王府秘制鸡)", "Milk Skin Yogurt (奶皮子)"].map((d) => (
+                      <span key={d} className="px-2 py-0.5 rounded-md bg-stone-100 text-xs text-stone-600 font-medium">{d}</span>
+                    ))}
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 text-xs text-stone-400">
+                  <span className="font-mono">💰 ~¥60/person</span>
+                  <span>📍 Drum Tower, Ancient City (鼓楼旁)</span>
+                </div>
+              </div>
+              <div className="px-6 py-3 bg-stone-50 border-t border-stone-100">
+                <p className="text-xs text-stone-500">
+                  <strong className="text-amber-700">💡 Tip:</strong> The Drum Tower branch
+                  is always packed. Go at 11am sharp or expect a 1–1.5 hour wait. Skip the
+                  crab roe shaomai — stick with lamb or pork.
+                </p>
+              </div>
+            </div>
+
+            {/* 德味羊杂 */}
+            <div className="rounded-xl border border-stone-200 bg-white overflow-hidden hover:shadow-md transition-shadow flex flex-col">
+              <div className="p-6 flex-1">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="w-8 h-8 rounded-lg bg-red-100 text-red-800 flex items-center justify-center text-sm font-bold">5</span>
+                  <h3 className="font-display font-bold text-lg text-stone-900">Dewei Yangza</h3>
+                </div>
+                <p className="text-xs font-semibold text-stone-400 uppercase tracking-wider mb-3">德味羊杂</p>
+                <p className="text-sm text-stone-600 leading-relaxed mb-3">
+                  A <strong className="text-stone-900">century-old heritage brand</strong> and
+                  officially recognized Intangible Cultural Heritage. Their lamb offal soup
+                  (羊杂) is legendary — rich bone broth, chili oil made in-house, heart,
+                  liver, tripe, and lung cleaned to perfection. Zero gaminess, maximum flavor.
+                </p>
+                <div className="mb-3">
+                  <p className="text-xs font-semibold text-stone-500 uppercase tracking-wider mb-1.5">What to Order</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {["Lamb Offal Soup (羊杂粉)", "Pure Lamb Offal (纯羊杂)", "Fried Dough Twist (麻叶)", "Fresh Soy Milk (豆浆)", "Free Refill on Noodles"].map((d) => (
+                      <span key={d} className="px-2 py-0.5 rounded-md bg-stone-100 text-xs text-stone-600 font-medium">{d}</span>
+                    ))}
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 text-xs text-stone-400">
+                  <span className="font-mono">💰 ~¥15/person</span>
+                  <span>📍 Ancient City (古城内)</span>
+                </div>
+              </div>
+              <div className="px-6 py-3 bg-stone-50 border-t border-stone-100">
+                <p className="text-xs text-stone-500">
+                  <strong className="text-amber-700">💡 Tip:</strong> Get a half-portion
+                  (半份, ¥12) with a máyè (麻叶, sweet fried dough) on the side. Dip it in
+                  the soup — crispy outside, soft inside, pure comfort. Small shop, expect
+                  shared tables.
                 </p>
               </div>
             </div>
