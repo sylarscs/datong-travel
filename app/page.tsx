@@ -250,10 +250,10 @@ export default function HomePage() {
           </div>
 
           {/* Queue Warning */}
-          <div className="mb-8 p-4 rounded-lg bg-amber-50 border border-amber-200 text-center">
-            <p className="text-sm text-amber-800 font-semibold">
+          <div className="mb-8 py-3 px-4 rounded-lg bg-amber-50 border border-amber-200 text-center">
+            <p className="text-sm text-amber-800 font-semibold leading-relaxed">
               🕐 These restaurants are wildly popular — expect 1–3 hour waits during peak season.
-              <span className="font-normal"> Arrive 30 min before opening. Note: during busy months, Dianping only shows queue progress — you cannot grab a number online.</span>
+              Arrive 30 min before opening, or check queue progress on Dianping / Meituan before heading over.
             </p>
           </div>
 
@@ -438,6 +438,44 @@ export default function HomePage() {
                   (半份, ¥12) with a máyè (麻叶, sweet fried dough) on the side. Dip it in
                   the soup — crispy outside, soft inside, pure comfort. Small shop, expect
                   shared tables.
+                </p>
+              </div>
+            </div>
+
+            {/* 妙华居素食 */}
+            <div className="rounded-xl border border-stone-200 bg-white overflow-hidden hover:shadow-md transition-shadow flex flex-col relative">
+              <span className="absolute top-3 left-3 px-2 py-0.5 rounded text-[10px] font-bold bg-green-600 text-white uppercase tracking-wider">Vege</span>
+              <div className="p-6 flex-1">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="w-8 h-8 rounded-lg bg-red-100 text-red-800 flex items-center justify-center text-sm font-bold">6</span>
+                  <h3 className="font-display font-bold text-lg text-stone-900">Miaohuaju</h3>
+                </div>
+                <p className="text-xs font-semibold text-stone-400 uppercase tracking-wider mb-3">妙华居素食</p>
+                <p className="text-sm text-stone-600 leading-relaxed mb-3">
+                  Datong&apos;s best vegetarian restaurant — and a hit with Western travelers.
+                  Creative plant-based takes on classic Chinese dishes: Sichuan &quot;fish&quot;
+                  made from tofu skin, mushroom skewers that taste like lamb, and dumplings
+                  stuffed with wild greens. Even carnivores leave converted.
+                </p>
+                <div className="mb-3">
+                  <p className="text-xs font-semibold text-stone-500 uppercase tracking-wider mb-1.5">Signature Dishes</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {["Bodhi Skewers (菩提上上签)", "Buddha's Poached 'Fish' (佛钵飘香)", "Iron-Plate Eggplant (铁板茄盒)", "Wild Green Dumplings (野菜饺子)", "Lotus Root Chips (荷叶藕块)"].map((d) => (
+                      <span key={d} className="px-2 py-0.5 rounded-md bg-stone-100 text-xs text-stone-600 font-medium">{d}</span>
+                    ))}
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 text-xs text-stone-400">
+                  <span className="font-mono">💰 ~¥45/person</span>
+                  <span>📍 Yongtai South Road (永泰南路)</span>
+                </div>
+              </div>
+              <div className="px-6 py-3 bg-stone-50 border-t border-stone-100">
+                <p className="text-xs text-stone-500">
+                  <strong className="text-red-700">⚠️ Far from the Ancient City:</strong> Located
+                  south of the city center near Red Star Macalline (红星美凯龙). Budget 20–30 min
+                  by taxi or Didi from the Ancient City. Worth the trip for a quiet meal away
+                  from the crowds.
                 </p>
               </div>
             </div>
