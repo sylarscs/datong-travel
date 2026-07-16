@@ -74,7 +74,7 @@ export default function HuayanPremiumPage() {
       </section>
 
       <InfoBox type="info" title="Bundle & Save">
-        Get <strong>all 5 guides</strong> for <strong>$21.99</strong> — save 31%.{" "}
+        Get <strong>all 5 guides</strong> for <strong>$19.99</strong> — save 37%.{" "}
         <a href="/premium" className="font-semibold text-red-800">View bundle →</a>
       </InfoBox>
     </div>

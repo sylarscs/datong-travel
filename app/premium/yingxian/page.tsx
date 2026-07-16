@@ -69,7 +69,7 @@ export default function YingxianPremiumPage() {
       </section>
 
       <InfoBox type="info" title="Bundle & Save">
-        All 5 guides for <strong>$21.99</strong> — save 31%.{" "}
+        All 5 guides for <strong>$19.99</strong> — save 37%.{" "}
         <a href="/premium" className="font-semibold text-red-800">View bundle →</a>
       </InfoBox>
     </div>
