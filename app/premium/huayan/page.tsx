@@ -7,14 +7,14 @@ export const metadata = {
 };
 
 const EPISODES = [
-  { num: 1, title: "The Greatest Liao Dynasty Temple in China", location: "Temple entrance", duration: "4 min" },
-  { num: 2, title: "The Upper Temple — China's Largest Buddhist Hall", location: "Mahavira Hall", duration: "4 min", badge: "Must See" },
-  { num: 3, title: "Reading the Frescoes — 880 sqm of Ming Dynasty Art", location: "Upper Temple walls", duration: "3 min" },
-  { num: 4, title: "The Lower Temple — The Thousand-Year Library", location: "Bhagavan Sutra Hall", duration: "5 min", badge: "Must See" },
-  { num: 5, title: "The Liao Dynasty Craft — Wood Joinery Without Nails", location: "Lower Temple cabinets", duration: "3 min" },
-  { num: 6, title: "The Pagoda & Gardens — Huayan's Quiet Side", location: "Pagoda and gardens", duration: "2 min" },
-  { num: 7, title: "The Courtyards — Between the Halls", location: "Temple courtyards", duration: "2 min" },
-  { num: 8, title: "Why Huayan Matters — Legacy of a Vanished Empire", location: "Exit / temple gate", duration: "3 min" },
+  { num: 1, title: "The Greatest Liao Dynasty Temple in China", location: "Temple entrance", duration: "4 min", highlight: false },
+  { num: 2, title: "The Upper Temple — China's Largest Buddhist Hall", location: "Mahavira Hall", duration: "4 min", highlight: true, badge: "Must See" },
+  { num: 3, title: "Reading the Frescoes — 880 sqm of Ming Dynasty Art", location: "Upper Temple walls", duration: "3 min", highlight: false },
+  { num: 4, title: "The Lower Temple — The Thousand-Year Library", location: "Bhagavan Sutra Hall", duration: "5 min", highlight: true, badge: "Must See" },
+  { num: 5, title: "The Liao Dynasty Craft — Wood Joinery Without Nails", location: "Lower Temple cabinets", duration: "3 min", highlight: false },
+  { num: 6, title: "The Pagoda & Gardens — Huayan's Quiet Side", location: "Pagoda and gardens", duration: "2 min", highlight: false },
+  { num: 7, title: "The Courtyards — Between the Halls", location: "Temple courtyards", duration: "2 min", highlight: false },
+  { num: 8, title: "Why Huayan Matters — Legacy of a Vanished Empire", location: "Exit / temple gate", duration: "3 min", highlight: false },
 ];
 
 export default function HuayanPremiumPage() {
@@ -29,7 +29,7 @@ export default function HuayanPremiumPage() {
           5 episodes — China&apos;s largest Buddhist hall, a 1,000-year-old sutra library, and the best surviving monument of the Liao Dynasty.
         </p>
         <div className="flex flex-wrap gap-3 mt-3 text-xs font-mono text-stone-400">
-          <span>8 episodes</span><span>~30 minutes</span><span>$0.99</span>
+          <span>8 episodes</span><span>~30 minutes</span><span>$5.99</span>
         </div>
         <div className="mt-3 flex items-center gap-2 text-xs text-stone-500">
           <span>⭐ 4.9</span><span>·</span><span>Trusted by travelers from 18 countries</span>
@@ -49,7 +49,9 @@ export default function HuayanPremiumPage() {
         <div className="space-y-2">
           {EPISODES.map((ep) => (
             <div key={ep.num} className="flex items-start gap-3 p-3 rounded-lg border border-stone-200 bg-white">
-              <span className="flex-shrink-0 w-7 h-7 rounded-full bg-stone-900 text-white flex items-center justify-center text-xs font-semibold">{ep.num}</span>
+              <span className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-xs font-semibold ${ep.highlight ? "bg-red-800 text-white" : "bg-stone-900 text-white"}`}>
+                {ep.num}
+              </span>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-2">
                   <h3 className="font-semibold text-stone-900 text-sm">{ep.title}</h3>
@@ -66,13 +68,13 @@ export default function HuayanPremiumPage() {
       <section className="p-6 sm:p-8 rounded-xl bg-stone-900 text-white text-center mb-10">
         <h2 className="font-display font-bold text-2xl mb-2">Get All 5 Episodes</h2>
         <p className="text-stone-300 mb-2 text-sm">5 episodes · ~20 min · Listen offline</p>
-        <p className="font-display font-bold text-3xl mb-4">$0.99</p>
-        <button className="px-6 py-3 rounded-md bg-white text-stone-900 font-semibold hover:bg-stone-100 transition-colors">Buy Now — $0.99</button>
+        <p className="font-display font-bold text-3xl mb-4">$5.99</p>
+        <button className="px-6 py-3 rounded-md bg-white text-stone-900 font-semibold hover:bg-stone-100 transition-colors">Buy Now — $5.99</button>
         <p className="text-xs text-stone-400 mt-4">Payment coming soon.</p>
       </section>
 
       <InfoBox type="info" title="Bundle & Save">
-        Get <strong>all 5 guides</strong> for <strong>$9.99</strong> — includes Yungang, Hanging Temple, Huayan Temple, plus the Ancient City Walking Tour & Nine Dragon Screen as free bonuses.{" "}
+        Get <strong>all 5 guides</strong> for <strong>$21.99</strong> — save 31%.{" "}
         <a href="/premium" className="font-semibold text-red-800">View bundle →</a>
       </InfoBox>
     </div>

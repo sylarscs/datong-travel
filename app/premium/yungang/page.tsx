@@ -92,7 +92,7 @@ export default function YungangPremiumPage() {
       </section>
 
       <InfoBox type="info" title="Bundle & Save">
-        Get <strong>all 5 audio guides</strong> — Yungang + Hanging Temple + Huayan Temple + City Wall + Nine Dragon Screen — for <strong>$9.99</strong>. City Wall & Nine Dragon are exclusive bundle bonuses.{" "}
+        All 5 guides for <strong>$21.99</strong> — save 31%.{" "}
         <a href="/premium" className="font-semibold text-red-800">View bundle →</a>
       </InfoBox>
     </div>
