@@ -247,11 +247,9 @@ export default function HomePage() {
           </div>
 
           {/* Queue Warning */}
-          <div className="mb-8 py-3 px-4 rounded-lg bg-amber-50 border border-amber-200 flex items-center justify-center">
-            <p className="text-sm text-amber-800 font-semibold m-0">
-              🕐 These restaurants are wildly popular — expect 1–3 hour waits during peak season.
-              Arrive 30 min before opening, or check queue progress on Dianping / Meituan before heading over.
-            </p>
+          <div className="mb-8 px-4 py-3 rounded-lg bg-amber-50 border border-amber-200 text-center text-sm text-amber-800 font-semibold">
+            🕐 These restaurants are wildly popular — expect 1–3 hour waits during peak season.
+            Arrive 30 min before opening, or check queue progress on Dianping / Meituan before heading over.
           </div>
 
           {/* Restaurant Cards */}
